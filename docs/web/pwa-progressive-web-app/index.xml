@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PWA (Progressive Web App) on My New Hugo Site</title>
+    <link>http://example.org/web/pwa-progressive-web-app/</link>
+    <description>Recent content in PWA (Progressive Web App) on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 May 2021 15:58:47 +0200</lastBuildDate><atom:link href="http://example.org/web/pwa-progressive-web-app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup</title>
+      <link>http://example.org/web/pwa-progressive-web-app/setup/</link>
+      <pubDate>Tue, 18 May 2021 15:58:47 +0200</pubDate>
+      
+      <guid>http://example.org/web/pwa-progressive-web-app/setup/</guid>
+      <description>Create basic HTML &amp;amp; CSS for the future WPA : a. index.html
+&amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Hello World&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;css/style.css&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;theme-color&amp;#34; content=&amp;#34;white&amp;#34;/&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body class=&amp;#34;fullscreen&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;container&amp;#34;&amp;gt; &amp;lt;h1 class=&amp;#34;title&amp;#34;&amp;gt;Hello World!&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; b. css/style.css
+body { font-family: sans-serif; } /* Make content area fill the entire browser window */ html, .fullscreen { display: flex; height: 100%; margin: 0; padding: 0; width: 100%; } /* Center the content in the browser window */ .</description>
+    </item>
+    
+    <item>
+      <title>Notifications</title>
+      <link>http://example.org/web/pwa-progressive-web-app/notifications/</link>
+      <pubDate>Tue, 18 May 2021 15:58:47 +0200</pubDate>
+      
+      <guid>http://example.org/web/pwa-progressive-web-app/notifications/</guid>
+      <description>https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push
+-Notification API (different of push API)</description>
+    </item>
+    
+  </channel>
+</rss>

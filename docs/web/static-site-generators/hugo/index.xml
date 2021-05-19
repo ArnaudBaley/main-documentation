@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on My New Hugo Site</title>
+    <link>http://example.org/web/static-site-generators/hugo/</link>
+    <description>Recent content in Hugo on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 May 2021 15:55:39 +0200</lastBuildDate><atom:link href="http://example.org/web/static-site-generators/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Commands</title>
+      <link>http://example.org/web/static-site-generators/hugo/commands/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/web/static-site-generators/hugo/commands/</guid>
+      <description>Create site :   Create site &amp;ldquo;documentation&amp;rdquo;:
+hugo new site documentation   Launch server (with autoreload) :
+hugo server   http://localhost:1313
+Install a theme :   Install theme :
+cd /themes git clone https://github.com/matcornic/hugo-theme-learn.git   Activate new theme in config.toml :
+theme = &amp;#34;hugo-theme-learn&amp;#34;   Create first post :   Create chapter (contains post) static-website-generators
+cd .. hugo new --kind chapter static-website-generators/_index.md   Create post hugo in chapter static-website-generators :</description>
+    </item>
+    
+    <item>
+      <title>Settings</title>
+      <link>http://example.org/web/static-site-generators/hugo/settings/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/web/static-site-generators/hugo/settings/</guid>
+      <description> Set build destination folder (config.toml) to docs instead of public: publishDir = &amp;#34;docs&amp;#34;   </description>
+    </item>
+    
+    <item>
+      <title>Troubleshoot</title>
+      <link>http://example.org/web/static-site-generators/hugo/troubleshoot/</link>
+      <pubDate>Tue, 18 May 2021 15:59:32 +0200</pubDate>
+      
+      <guid>http://example.org/web/static-site-generators/hugo/troubleshoot/</guid>
+      <description>404 on css, js : Activate relative URL instead of absolute (default) :
+config.toml :
+relativeURLs = true </description>
+    </item>
+    
+  </channel>
+</rss>
