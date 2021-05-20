@@ -6,10 +6,18 @@
     <description>Recent content in Tools on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 May 2021 15:55:39 +0200</lastBuildDate>
-    
-	<atom:link href="http://example.org/tools/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 18 May 2021 15:55:39 +0200</lastBuildDate><atom:link href="http://example.org/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub</title>
+      <link>http://example.org/tools/github/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/tools/github/</guid>
+      <description>Activate pages -Repository -&amp;gt; Settings -&amp;gt; Options -&amp;gt; GitHub Pages
+Actions (workflow) Create file : .github/workflows/workflow.yml
+Example (auto build hugo static site generator on master push) :
+name: Build Site on: push: branches: - master jobs: build: runs-on: ubuntu-latest steps: - name: Checkout Repo uses: actions/checkout@master with: submodules: true - name: Build Site uses: chabad360/hugo-actions@master </description>
+    </item>
     
   </channel>
 </rss>
