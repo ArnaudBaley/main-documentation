@@ -18,3 +18,4 @@ jobs:
         uses: chabad360/hugo-actions@master
         with:
           buildPath: 'docs'
+          githubToken: ${{ secrets.TOKEN }}
