@@ -7,16 +7,18 @@ weight: 4
 
 ## On gitHub Pages :
 
-- Test git submodules in repository (Hugo theme could be a git submodule).
+[SOURCE](https://ruddra.com/hugo-deploy-static-page-using-github-actions/).
 
-- Override hugo build destination folder to /docs.
+- Test git submodules in repository (Hugo theme could be a git submodule).
 
 - Activate relative URL in Hugo settings.
 
 - Activate pages on GitHub repository.
 
-- Set GitHub pages baseURL as /docs.
+- Set GitHub pages branch to docs.
 
-- Create GitHub build workflow.
+- Create GitHub Token.
+
+- Add token as secret into repository.
 
 - Activate auto build on push -> see "Tools > GitHub > Actions (workflow)".
