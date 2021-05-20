@@ -38,12 +38,13 @@ publishDir = &amp;#34;docs&amp;#34; </description>
       <pubDate>Tue, 18 May 2021 15:59:32 +0200</pubDate>
       
       <guid>http://example.org/web/static-site-generators/hugo/deployment/</guid>
-      <description>On gitHub Pages :   Test git submodules in repository (Hugo theme could be a git submodule).
-  Override hugo build destination folder to /docs.
+      <description>On gitHub Pages : SOURCE.
+  Test git submodules in repository (Hugo theme could be a git submodule).
   Activate relative URL in Hugo settings.
   Activate pages on GitHub repository.
-  Set GitHub pages baseURL as /docs.
-  Create GitHub build workflow.
+  Set GitHub pages branch to docs.
+  Create GitHub Token.
+  Add token as secret into repository.
   Activate auto build on push -&amp;gt; see &amp;ldquo;Tools &amp;gt; GitHub &amp;gt; Actions (workflow)&amp;rdquo;.</description>
     </item>
     
@@ -87,8 +88,8 @@ body { font-family: sans-serif; } /* Make content area fill the entire browser w
       <guid>http://example.org/tools/github/</guid>
       <description>Activate pages -Repository -&amp;gt; Settings -&amp;gt; Options -&amp;gt; GitHub Pages
 Actions (workflow) Create file : .github/workflows/workflow.yml
-Example (auto build hugo static site generator on master push) :
-name: Build Site on: push: branches: - master jobs: build: runs-on: ubuntu-latest steps: - name: Checkout Repo uses: actions/checkout@master with: submodules: true - name: Build Site uses: chabad360/hugo-actions@master </description>
+Example (auto build hugo static site generator on push) :
+name: CI on: push jobs: deploy: runs-on: ubuntu-18.04 steps: - name: Git checkout uses: actions/checkout@v2 - name: Update theme  run: git submodule update --init --recursive - name: Setup hugo uses: peaceiris/actions-hugo@v2 - name: Build run: hugo - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: personal_token: ${{ secrets.</description>
     </item>
     
   </channel>

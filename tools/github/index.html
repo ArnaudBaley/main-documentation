@@ -12,22 +12,22 @@
     <title>GitHub :: My New Hugo Site</title>
 
     
-    <link href="../../css/nucleus.css?1621543693" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1621543693" rel="stylesheet">
-    <link href="../../css/hybrid.css?1621543693" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1621543693" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1621543693" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1621543693" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1621543693" rel="stylesheet">
-    <link href="../../css/theme.css?1621543693" rel="stylesheet">
-    <link href="../../css/tabs.css?1621543693" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1621543693" rel="stylesheet">
+    <link href="../../css/nucleus.css?1621544409" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1621544409" rel="stylesheet">
+    <link href="../../css/hybrid.css?1621544409" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1621544409" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1621544409" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1621544409" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1621544409" rel="stylesheet">
+    <link href="../../css/theme.css?1621544409" rel="stylesheet">
+    <link href="../../css/tabs.css?1621544409" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1621544409" rel="stylesheet">
     
-    <link href="../../css/theme-blue.css?1621543693" rel="stylesheet">
+    <link href="../../css/theme-blue.css?1621544409" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1621543693"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1621544409"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -72,14 +72,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1621543693"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1621543693"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1621544409"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1621544409"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/example.org\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1621543693"></script>
+<script type="text/javascript" src="../../js/search.js?1621544409"></script>
 
     
   </div>
@@ -678,25 +678,32 @@
 <p>-Repository -&gt; Settings -&gt; Options -&gt; GitHub Pages</p>
 <h3 id="actions-workflow">Actions (workflow)</h3>
 <p>Create file : <code>.github/workflows/workflow.yml</code></p>
-<p>Example (auto build hugo static site generator on master push) :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build Site</span>
-
-<span style="color:#f92672">on</span>:
-  <span style="color:#f92672">push</span>:
-    <span style="color:#f92672">branches</span>:
-      - <span style="color:#ae81ff">master</span>
-
+<p>Example (auto build hugo static site generator on push) :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">CI</span>
+<span style="color:#f92672">on</span>: <span style="color:#ae81ff">push</span>
 <span style="color:#f92672">jobs</span>:
-  <span style="color:#f92672">build</span>:
-    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
-
+  <span style="color:#f92672">deploy</span>:
+    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-18.04</span>
     <span style="color:#f92672">steps</span>:
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout Repo</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@master</span>
+      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Git checkout</span>
+        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
+
+      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Update theme    </span>
+        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">git submodule update --init --recursive</span>
+
+      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup hugo</span>
+        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-hugo@v2</span>
+
+      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build</span>
+        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">hugo</span>
+
+      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy</span>
+        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-gh-pages@v3</span>
         <span style="color:#f92672">with</span>:
-          <span style="color:#f92672">submodules</span>: <span style="color:#66d9ef">true</span>
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build Site</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">chabad360/hugo-actions@master</span>
+          <span style="color:#f92672">personal_token</span>: <span style="color:#ae81ff">${{ secrets.TOKEN }}        </span>
+          <span style="color:#f92672">publish_dir</span>: <span style="color:#ae81ff">./public</span>
+          <span style="color:#f92672">keep_files</span>: <span style="color:#66d9ef">true</span>
+          <span style="color:#f92672">publish_branch</span>: <span style="color:#ae81ff">docs</span>
 </code></pre></div>
 
 <footer class="footline">
@@ -1046,19 +1053,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1621543693"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1621543693"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1621543693"></script>
-    <script src="../../js/jquery.sticky.js?1621543693"></script>
-    <script src="../../js/featherlight.min.js?1621543693"></script>
-    <script src="../../js/highlight.pack.js?1621543693"></script>
+    <script src="../../js/clipboard.min.js?1621544409"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1621544409"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1621544409"></script>
+    <script src="../../js/jquery.sticky.js?1621544409"></script>
+    <script src="../../js/featherlight.min.js?1621544409"></script>
+    <script src="../../js/highlight.pack.js?1621544409"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1621543693"></script>
-    <script src="../../js/learn.js?1621543693"></script>
-    <script src="../../js/hugo-learn.js?1621543693"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1621544409"></script>
+    <script src="../../js/learn.js?1621544409"></script>
+    <script src="../../js/hugo-learn.js?1621544409"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1621543693"></script>
+            <script src="../../mermaid/mermaid.js?1621544409"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

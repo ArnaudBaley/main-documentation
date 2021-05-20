@@ -38,12 +38,13 @@ publishDir = &amp;#34;docs&amp;#34; </description>
       <pubDate>Tue, 18 May 2021 15:59:32 +0200</pubDate>
       
       <guid>http://example.org/web/static-site-generators/hugo/deployment/</guid>
-      <description>On gitHub Pages :   Test git submodules in repository (Hugo theme could be a git submodule).
-  Override hugo build destination folder to /docs.
+      <description>On gitHub Pages : SOURCE.
+  Test git submodules in repository (Hugo theme could be a git submodule).
   Activate relative URL in Hugo settings.
   Activate pages on GitHub repository.
-  Set GitHub pages baseURL as /docs.
-  Create GitHub build workflow.
+  Set GitHub pages branch to docs.
+  Create GitHub Token.
+  Add token as secret into repository.
   Activate auto build on push -&amp;gt; see &amp;ldquo;Tools &amp;gt; GitHub &amp;gt; Actions (workflow)&amp;rdquo;.</description>
     </item>
     

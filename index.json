@@ -18,7 +18,7 @@
 	"title": "Deployment",
 	"tags": [],
 	"description": "",
-	"content": "On gitHub Pages :   Test git submodules in repository (Hugo theme could be a git submodule).\n  Override hugo build destination folder to /docs.\n  Activate relative URL in Hugo settings.\n  Activate pages on GitHub repository.\n  Set GitHub pages baseURL as /docs.\n  Create GitHub build workflow.\n  Activate auto build on push -\u0026gt; see \u0026ldquo;Tools \u0026gt; GitHub \u0026gt; Actions (workflow)\u0026rdquo;.\n  "
+	"content": "On gitHub Pages : SOURCE.\n  Test git submodules in repository (Hugo theme could be a git submodule).\n  Activate relative URL in Hugo settings.\n  Activate pages on GitHub repository.\n  Set GitHub pages branch to docs.\n  Create GitHub Token.\n  Add token as secret into repository.\n  Activate auto build on push -\u0026gt; see \u0026ldquo;Tools \u0026gt; GitHub \u0026gt; Actions (workflow)\u0026rdquo;.\n  "
 },
 {
 	"uri": "http://example.org/web/static-site-generators/hugo/themes/learn/",
@@ -88,7 +88,7 @@
 	"title": "GitHub",
 	"tags": [],
 	"description": "",
-	"content": "Activate pages -Repository -\u0026gt; Settings -\u0026gt; Options -\u0026gt; GitHub Pages\nActions (workflow) Create file : .github/workflows/workflow.yml\nExample (auto build hugo static site generator on master push) :\nname: Build Site on: push: branches: - master jobs: build: runs-on: ubuntu-latest steps: - name: Checkout Repo uses: actions/checkout@master with: submodules: true - name: Build Site uses: chabad360/hugo-actions@master "
+	"content": "Activate pages -Repository -\u0026gt; Settings -\u0026gt; Options -\u0026gt; GitHub Pages\nActions (workflow) Create file : .github/workflows/workflow.yml\nExample (auto build hugo static site generator on push) :\nname: CI on: push jobs: deploy: runs-on: ubuntu-18.04 steps: - name: Git checkout uses: actions/checkout@v2 - name: Update theme  run: git submodule update --init --recursive - name: Setup hugo uses: peaceiris/actions-hugo@v2 - name: Build run: hugo - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: personal_token: ${{ secrets.TOKEN }}  publish_dir: ./public keep_files: true publish_branch: docs "
 },
 {
 	"uri": "http://example.org/web/static-site-generators/hugo/",
