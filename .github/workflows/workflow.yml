@@ -17,5 +17,5 @@ jobs:
       - name: Build Site
         uses: chabad360/hugo-gh-pages@master      
         with:
-          buildPath: 'docs'
-          githubToken: ${{ secrets.TOKEN }}
+          publish_dir: 'docs'
+          personal_token: ${{ secrets.TOKEN }}
