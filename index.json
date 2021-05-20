@@ -18,7 +18,7 @@
 	"title": "Deployment",
 	"tags": [],
 	"description": "",
-	"content": "On gitHub Pages :   Test git submodules in repository (Hugo theme could be a git submodule).\n  Override hugo build destination folder to /docs.\n  Activate relative URL in Hugo settings.\n  Activate pages on GitHub repository.\n  Set GitHub pages baseURL as /docs.\n  Create GitHub build workflow.\n  Activate auto build on push -\u0026gt; see \u0026ldquo;Tools \u0026gt; GitHub \u0026gt; Actions (workflow)\u0026rdquo;. source1, source2\n  "
+	"content": "On gitHub Pages :   Test git submodules in repository (Hugo theme could be a git submodule).\n  Override hugo build destination folder to /docs.\n  Activate relative URL in Hugo settings.\n  Activate pages on GitHub repository.\n  Set GitHub pages baseURL as /docs.\n  Create GitHub build workflow.\n  Activate auto build on push -\u0026gt; see \u0026ldquo;Tools \u0026gt; GitHub \u0026gt; Actions (workflow)\u0026rdquo;.\n  "
 },
 {
 	"uri": "http://example.org/web/static-site-generators/hugo/themes/learn/",
@@ -67,7 +67,7 @@
 	"title": "Home",
 	"tags": [],
 	"description": "",
-	"content": "IT Documentation Arnaud BALEY test\n"
+	"content": "IT Documentation Arnaud BALEY "
 },
 {
 	"uri": "http://example.org/coding/",
