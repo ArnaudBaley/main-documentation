@@ -19,4 +19,4 @@ weight: 4
 
 - Create GitHub build workflow.
 
-- Activate auto build on push -> see "Tools > GitHub > Actions (workflow)".
+- Activate auto build on push -> see "Tools > GitHub > Actions (workflow)". [source1](https://ruddra.com/hugo-deploy-static-page-using-github-actions/), [source2]()

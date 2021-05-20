@@ -15,7 +15,7 @@ jobs:
         with:
           submodules: true
       - name: Build Site
-        uses: chabad360/hugo-actions@master
+        uses: chabad360/hugo-gh-pages@master      
         with:
           buildPath: 'docs'
           githubToken: ${{ secrets.TOKEN }}
