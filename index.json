@@ -14,6 +14,13 @@
 	"content": "Build destination folder Set build destination folder (config.toml) to docs instead of public:\npublishDir = \u0026#34;docs\u0026#34; "
 },
 {
+	"uri": "http://example.org/web/static-site-generators/hugo/themes/learn/settings/",
+	"title": "Settings",
+	"tags": [],
+	"description": "",
+	"content": "Change logo Create file /layouts/partials/logo.html :\n\u0026lt;img style=\u0026#34;border-radius: 50%; max-width: 70%;\u0026#34; src=\u0026#34;https://avatars.githubusercontent.com/u/22755712?v=4\u0026#34;\u0026gt; "
+},
+{
 	"uri": "http://example.org/web/static-site-generators/hugo/deployment/",
 	"title": "Deployment",
 	"tags": [],
