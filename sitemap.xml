@@ -38,6 +38,9 @@
     <loc>http://example.org/coding/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
+    <loc>http://example.org/coding/languages/javascript/design-patterns/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
     <loc>http://example.org/tools/git/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
@@ -47,7 +50,13 @@
     <loc>http://example.org/web/static-site-generators/hugo/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
+    <loc>http://example.org/coding/languages/javascript/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
     <loc>http://example.org/coding/languages/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/coding/languages/markdown/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
     <loc>http://example.org/web/static-site-generators/</loc>

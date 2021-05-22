@@ -93,6 +93,16 @@ window.onload = () =&amp;gt; { &amp;#39;use strict&amp;#39;; if (&amp;#39;servic
     </item>
     
     <item>
+      <title>Design Patterns</title>
+      <link>http://example.org/coding/languages/javascript/design-patterns/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/javascript/design-patterns/</guid>
+      <description>Sources :
+ JavaScript Design Patterns (DigitalOcean) JavaScript Design Patterns (BetterProgramming)  List            Module Organize code, encapsulation.     Observer Update an object when an another object changes (see : $emit et $broadcast in JS frameworks).     Prototype      Singleton      Constructor Based on class. Execute code at class instantiation.</description>
+    </item>
+    
+    <item>
       <title>GitHub</title>
       <link>http://example.org/tools/github/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>

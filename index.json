@@ -84,6 +84,13 @@
 	"content": ""
 },
 {
+	"uri": "http://example.org/coding/languages/javascript/design-patterns/",
+	"title": "Design Patterns",
+	"tags": [],
+	"description": "",
+	"content": "Sources :\n JavaScript Design Patterns (DigitalOcean) JavaScript Design Patterns (BetterProgramming)  List            Module Organize code, encapsulation.     Observer Update an object when an another object changes (see : $emit et $broadcast in JS frameworks).     Prototype      Singleton      Constructor Based on class. Execute code at class instantiation.     Factoy       "
+},
+{
 	"uri": "http://example.org/tools/git/",
 	"title": "Git",
 	"tags": [],
@@ -105,11 +112,25 @@
 	"content": "Sources Official guide : getting started\nTutorials :\n Comment créer un site avec Hugo partie 1 : intro et configurations   Tricks Activate full search (not only menu items) config.toml :\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] Change order in menu -keyword weight :\n--- title: \u0026quot;Commands\u0026quot; date: 2021-05-18T15:55:39+02:00 draft: false weight: 1 --- "
 },
 {
+	"uri": "http://example.org/coding/languages/javascript/",
+	"title": "JavaScript",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://example.org/coding/languages/",
 	"title": "Languages",
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "http://example.org/coding/languages/markdown/",
+	"title": "Markdown",
+	"tags": [],
+	"description": "",
+	"content": "Table With header     Gatsby Hugo Jekyll     Learning curve higher lesser    Language JavaScript Go Ruby    | | Gatsby | Hugo | Jekyll | ----------- |----------- | ----------- | ----------- | | Learning curve | higher | lesser | | Language | JavaScript | Go | Ruby "
 },
 {
 	"uri": "http://example.org/web/static-site-generators/",
