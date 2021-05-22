@@ -12,22 +12,22 @@
     <title>Notifications :: My New Hugo Site</title>
 
     
-    <link href="../../../css/nucleus.css?1621595736" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1621595736" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1621595736" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1621595736" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1621595736" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1621595736" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1621595736" rel="stylesheet">
-    <link href="../../../css/theme.css?1621595736" rel="stylesheet">
-    <link href="../../../css/tabs.css?1621595736" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1621595736" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1621666321" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1621666321" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1621666321" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1621666321" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1621666321" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1621666321" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1621666321" rel="stylesheet">
+    <link href="../../../css/theme.css?1621666321" rel="stylesheet">
+    <link href="../../../css/tabs.css?1621666321" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1621666321" rel="stylesheet">
     
-    <link href="../../../css/theme-blue.css?1621595736" rel="stylesheet">
+    <link href="../../../css/theme-blue.css?1621666322" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1621595736"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1621666322"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1621595736"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1621595736"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1621666322"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1621666322"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/example.org\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1621595736"></script>
+<script type="text/javascript" src="../../../js/search.js?1621666322"></script>
 
     
   </div>
@@ -685,7 +685,69 @@
 
 <p><a href="https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push">https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push</a></p>
 <p>-Notification API (different of push API)</p>
+<p>Example of notification (without push) :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">window.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> () =&gt; {
+    <span style="color:#e6db74">&#39;use strict&#39;</span>;
 
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#39;serviceWorker&#39;</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">navigator</span>) {
+        <span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">serviceWorker</span>
+            .<span style="color:#a6e22e">register</span>(<span style="color:#e6db74">&#39;./sw.js&#39;</span>);
+    }
+
+    <span style="color:#a6e22e">requestNotifPermission</span>();
+}
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">games</span> <span style="color:#f92672">=</span> [{
+        <span style="color:#a6e22e">slug</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;lost-in-cyberspace&#39;</span>,
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Lost in Cyberspace&#39;</span>,
+        <span style="color:#a6e22e">author</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Zosia and Bartek&#39;</span>,
+        <span style="color:#a6e22e">twitter</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bartaz&#39;</span>,
+        <span style="color:#a6e22e">website</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+        <span style="color:#a6e22e">github</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;github.com/bartaz/lost-in-cyberspace&#39;</span>
+    },
+    {
+        <span style="color:#a6e22e">slug</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;vernissage&#39;</span>,
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Vernissage&#39;</span>,
+        <span style="color:#a6e22e">author</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Platane&#39;</span>,
+        <span style="color:#a6e22e">twitter</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;platane_&#39;</span>,
+        <span style="color:#a6e22e">website</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;github.com/Platane&#39;</span>,
+        <span style="color:#a6e22e">github</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;github.com/Platane/js13k-2017&#39;</span>
+    },
+    {
+        <span style="color:#a6e22e">slug</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;emma-3d&#39;</span>,
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Emma-3D&#39;</span>,
+        <span style="color:#a6e22e">author</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Prateek Roushan&#39;</span>,
+        <span style="color:#a6e22e">twitter</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+        <span style="color:#a6e22e">website</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+        <span style="color:#a6e22e">github</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;github.com/coderprateek/Emma-3D&#39;</span>
+    }
+];
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">requestNotifPermission</span>() {
+    <span style="color:#a6e22e">Notification</span>.<span style="color:#a6e22e">requestPermission</span>().<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">result</span>) {
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">result</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;granted&#39;</span>) {
+            <span style="color:#a6e22e">randomNotification</span>();
+        }
+    });
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">randomNotification</span>() {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">randomItem</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#a6e22e">games</span>.<span style="color:#a6e22e">length</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notifTitle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">games</span>[<span style="color:#a6e22e">randomItem</span>].<span style="color:#a6e22e">name</span>;
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notifBody</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Créé par &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">games</span>[<span style="color:#a6e22e">randomItem</span>].<span style="color:#a6e22e">author</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;.&#39;</span>;
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">notifImg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;data/img/&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">games</span>[<span style="color:#a6e22e">randomItem</span>].<span style="color:#a6e22e">slug</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;.jpg&#39;</span>;
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">options</span> <span style="color:#f92672">=</span> {
+        <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">notifBody</span>,
+        <span style="color:#a6e22e">icon</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">notifImg</span>
+    }
+
+    <span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">serviceWorker</span>.<span style="color:#a6e22e">ready</span>.<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">registration</span> =&gt; {
+        <span style="color:#a6e22e">registration</span>.<span style="color:#a6e22e">showNotification</span>(<span style="color:#e6db74">&#39;Hello world!&#39;</span>, <span style="color:#a6e22e">options</span>);
+    })
+
+    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">randomNotification</span>, <span style="color:#ae81ff">5000</span>);
+}
+</code></pre></div>
 
 <footer class="footline">
 	
@@ -1051,19 +1113,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1621595736"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1621595736"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1621595736"></script>
-    <script src="../../../js/jquery.sticky.js?1621595736"></script>
-    <script src="../../../js/featherlight.min.js?1621595736"></script>
-    <script src="../../../js/highlight.pack.js?1621595736"></script>
+    <script src="../../../js/clipboard.min.js?1621666322"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1621666322"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1621666322"></script>
+    <script src="../../../js/jquery.sticky.js?1621666322"></script>
+    <script src="../../../js/featherlight.min.js?1621666322"></script>
+    <script src="../../../js/highlight.pack.js?1621666322"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1621595736"></script>
-    <script src="../../../js/learn.js?1621595736"></script>
-    <script src="../../../js/hugo-learn.js?1621595736"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1621666322"></script>
+    <script src="../../../js/learn.js?1621666322"></script>
+    <script src="../../../js/hugo-learn.js?1621666322"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1621595736"></script>
+            <script src="../../../mermaid/mermaid.js?1621666322"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

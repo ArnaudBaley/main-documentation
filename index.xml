@@ -87,7 +87,9 @@ body { font-family: sans-serif; } /* Make content area fill the entire browser w
       
       <guid>http://example.org/web/pwa-progressive-web-app/notifications/</guid>
       <description>https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push
--Notification API (different of push API)</description>
+-Notification API (different of push API)
+Example of notification (without push) :
+window.onload = () =&amp;gt; { &amp;#39;use strict&amp;#39;; if (&amp;#39;serviceWorker&amp;#39; in navigator) { navigator.serviceWorker .register(&amp;#39;./sw.js&amp;#39;); } requestNotifPermission(); } const games = [{ slug: &amp;#39;lost-in-cyberspace&amp;#39;, name: &amp;#39;Lost in Cyberspace&amp;#39;, author: &amp;#39;Zosia and Bartek&amp;#39;, twitter: &amp;#39;bartaz&amp;#39;, website: &amp;#39;&amp;#39;, github: &amp;#39;github.com/bartaz/lost-in-cyberspace&amp;#39; }, { slug: &amp;#39;vernissage&amp;#39;, name: &amp;#39;Vernissage&amp;#39;, author: &amp;#39;Platane&amp;#39;, twitter: &amp;#39;platane_&amp;#39;, website: &amp;#39;github.com/Platane&amp;#39;, github: &amp;#39;github.com/Platane/js13k-2017&amp;#39; }, { slug: &amp;#39;emma-3d&amp;#39;, name: &amp;#39;Emma-3D&amp;#39;, author: &amp;#39;Prateek Roushan&amp;#39;, twitter: &amp;#39;&amp;#39;, website: &amp;#39;&amp;#39;, github: &amp;#39;github.</description>
     </item>
     
     <item>
