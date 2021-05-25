@@ -126,6 +126,13 @@
 	"content": ""
 },
 {
+	"uri": "http://example.org/learning/",
+	"title": "Learning",
+	"tags": [],
+	"description": "",
+	"content": "Training :\n Algo -\u0026gt; Codewars  "
+},
+{
 	"uri": "http://example.org/coding/languages/markdown/",
 	"title": "Markdown",
 	"tags": [],
