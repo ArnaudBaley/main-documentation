@@ -14,7 +14,7 @@
       
       <guid>http://example.org/coding/languages/javascript/design-patterns/</guid>
       <description>Sources :
- JavaScript Design Patterns (DigitalOcean) JavaScript Design Patterns (BetterProgramming)  List            Module Organize code, encapsulation.     Observer Update an object when an another object changes (see : $emit et $broadcast in JS frameworks).     Prototype      Singleton      Constructor Based on class. Execute code at class instantiation.</description>
+ JavaScript Design Patterns (BetterProgramming)  List            Module Organize code, encapsulation.     Observer Update an object when an another object changes (see : $emit et $broadcast in JS frameworks).     Prototype “skeleton” of an existing object to create or instantiate new objects.     Singleton Only one instance of a singleton class can exist     Constructor Based on class.</description>
     </item>
     
   </channel>
