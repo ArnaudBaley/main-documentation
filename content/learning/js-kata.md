@@ -14,3 +14,12 @@ function even_or_odd(number) {
 console.log(even_or_odd(4)) // Even
 console.log(even_or_odd(5)) // Odd
 ```
+
+#### Opposite number :
+```js
+function opposite(number) {
+   return -number
+}
+
+console.log(opposite(5)) // -5
+```
