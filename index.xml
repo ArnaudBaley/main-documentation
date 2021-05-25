@@ -114,5 +114,14 @@ Example (auto build hugo static site generator on push) :
 name: CI on: push jobs: deploy: runs-on: ubuntu-18.04 steps: - name: Git checkout uses: actions/checkout@v2 - name: Update theme  run: git submodule update --init --recursive - name: Setup hugo uses: peaceiris/actions-hugo@v2 - name: Build run: hugo - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: personal_token: ${{ secrets.</description>
     </item>
     
+    <item>
+      <title>Kata JS</title>
+      <link>http://example.org/learning/js-kata/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/learning/js-kata/</guid>
+      <description>Even Or Odd : function even_or_odd(number) { if (number % 2 === 0) return &amp;#39;Even&amp;#39;; return &amp;#39;Odd&amp;#39;; } console.log(even_or_odd(4)) // Even console.log(even_or_odd(5)) // Odd </description>
+    </item>
+    
   </channel>
 </rss>

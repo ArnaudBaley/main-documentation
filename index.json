@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "http://example.org/learning/js-kata/",
+	"title": "Kata JS",
+	"tags": [],
+	"description": "",
+	"content": "Even Or Odd : function even_or_odd(number) { if (number % 2 === 0) return \u0026#39;Even\u0026#39;; return \u0026#39;Odd\u0026#39;; } console.log(even_or_odd(4)) // Even console.log(even_or_odd(5)) // Odd "
+},
+{
 	"uri": "http://example.org/coding/languages/",
 	"title": "Languages",
 	"tags": [],
