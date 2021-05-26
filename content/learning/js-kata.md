@@ -23,3 +23,12 @@ function opposite(number) {
 
 console.log(opposite(5)) // -5
 ```
+
+#### Remove first and last char of string :
+```js
+function removeChar(str){
+  return str.slice(1,(str.length - 1)) 
+};
+
+console.log(removeChar('eloquent')); // loquen;
+```
