@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 18 May 2021 15:55:39 +0200</lastBuildDate><atom:link href="http://example.org/coding/languages/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Array</title>
+      <link>http://example.org/coding/languages/javascript/array/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/javascript/array/</guid>
+      <description>Extract part of an array or a string (new array) -&amp;gt; slice() const array = &amp;#39;hello world&amp;#39;; const result = array.slice(0,5); console.log(result); // hello Remove part of an array (replace array) -&amp;gt; splice() const array = [&amp;#39;h&amp;#39;,&amp;#39;e&amp;#39;,&amp;#39;l&amp;#39;,&amp;#39;l&amp;#39;,&amp;#39;o&amp;#39;]; const result = array.splice(0, 3); console.log(result); // hel Split string by separator -&amp;gt; split() const string = &amp;#39;hello,world&amp;#39;; const result = string.split(&amp;#34;,&amp;#34;); console.log(result); // [&amp;#34;hello&amp;#34;, &amp;#34;world&amp;#34;] </description>
+    </item>
+    
+    <item>
       <title>Design Patterns</title>
       <link>http://example.org/coding/languages/javascript/design-patterns/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
