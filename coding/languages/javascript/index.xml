@@ -13,7 +13,7 @@
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
       
       <guid>http://example.org/coding/languages/javascript/array/</guid>
-      <description>Extract part of an array or a string (new array) -&amp;gt; slice() const array = &amp;#39;hello world&amp;#39;; const result = array.slice(0,5); console.log(result); // hello Remove part of an array (replace array) -&amp;gt; splice() const array = [&amp;#39;h&amp;#39;,&amp;#39;e&amp;#39;,&amp;#39;l&amp;#39;,&amp;#39;l&amp;#39;,&amp;#39;o&amp;#39;]; const result = array.splice(0, 3); console.log(result); // hel Split string by separator -&amp;gt; split() const string = &amp;#39;hello,world&amp;#39;; const result = string.split(&amp;#34;,&amp;#34;); console.log(result); // [&amp;#34;hello&amp;#34;, &amp;#34;world&amp;#34;] </description>
+      <description>Extract part of an array or a string (new array) -&amp;gt; slice() const array = &amp;#39;hello world&amp;#39;; const result = array.slice(0,5); console.log(result); // hello Remove part of an array (replace array) -&amp;gt; splice() const array = [&amp;#39;h&amp;#39;,&amp;#39;e&amp;#39;,&amp;#39;l&amp;#39;,&amp;#39;l&amp;#39;,&amp;#39;o&amp;#39;]; const result = array.splice(0, 3); console.log(result); // hel </description>
     </item>
     
     <item>
@@ -24,6 +24,24 @@
       <guid>http://example.org/coding/languages/javascript/design-patterns/</guid>
       <description>Sources :
  JavaScript Design Patterns (BetterProgramming)  List            Module Organize code, encapsulation.     Observer Update an object when an another object changes (see : $emit et $broadcast in JS frameworks).     Prototype “skeleton” of an existing object to create or instantiate new objects.     Singleton Only one instance of a singleton class can exist     Constructor Based on class.</description>
+    </item>
+    
+    <item>
+      <title>Loop</title>
+      <link>http://example.org/coding/languages/javascript/loop/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/javascript/loop/</guid>
+      <description>for let str = &amp;#39;&amp;#39;; for (let i = 0; i &amp;lt; 9; i++) { str = str + i; } console.log(str); // expected output: &amp;#34;012345678&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>String</title>
+      <link>http://example.org/coding/languages/javascript/string/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/javascript/string/</guid>
+      <description>Extract part of an array or a string (new array) -&amp;gt; slice() const array = &amp;#39;hello world&amp;#39;; const result = array.slice(0,5); console.log(result); // hello Split string by separator -&amp;gt; split() const string = &amp;#39;hello,world&amp;#39;; const result = string.split(&amp;#34;,&amp;#34;); console.log(result); // [&amp;#34;hello&amp;#34;, &amp;#34;world&amp;#34;] </description>
     </item>
     
   </channel>

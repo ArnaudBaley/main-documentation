@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../../../images/favicon.png" type="image/png">
 
-    <title>Commands :: My New Hugo Site</title>
+    <title>String :: My New Hugo Site</title>
 
     
     <link href="../../../../css/nucleus.css?1622140123" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../../../../web/static-site-generators/hugo/commands/">
+  <body class="" data-url="../../../../coding/languages/javascript/string/">
     <nav id="sidebar" class="">
 
 
@@ -88,7 +88,7 @@
   
     
     <li data-nav-id="/coding/" title="Coding" class="dd-item
-        
+        parent
         
         
         ">
@@ -117,7 +117,7 @@
   
     
     <li data-nav-id="/coding/languages/" title="Languages" class="dd-item
-        
+        parent
         
         
         ">
@@ -146,7 +146,7 @@
   
     
     <li data-nav-id="/coding/languages/javascript/" title="JavaScript" class="dd-item
-        
+        parent
         
         
         ">
@@ -235,7 +235,7 @@
  
   
     
-      <li data-nav-id="/coding/languages/javascript/string/" title="String" class="dd-item ">
+      <li data-nav-id="/coding/languages/javascript/string/" title="String" class="dd-item active">
         <a href="../../../../coding/languages/javascript/string/">
         String
         
@@ -446,7 +446,7 @@
   
     
     <li data-nav-id="/web/" title="Web" class="dd-item
-        parent
+        
         
         
         ">
@@ -553,7 +553,7 @@
   
     
     <li data-nav-id="/web/static-site-generators/" title="Static Site Generators" class="dd-item
-        parent
+        
         
         
         ">
@@ -582,7 +582,7 @@
   
     
     <li data-nav-id="/web/static-site-generators/hugo/" title="Hugo" class="dd-item
-        parent
+        
         
         
         ">
@@ -610,7 +610,7 @@
  
   
     
-      <li data-nav-id="/web/static-site-generators/hugo/commands/" title="Commands" class="dd-item active">
+      <li data-nav-id="/web/static-site-generators/hugo/commands/" title="Commands" class="dd-item ">
         <a href="../../../../web/static-site-generators/hugo/commands/">
         Commands
         
@@ -862,7 +862,7 @@
             
           
           
-            <a href='../../../../'>Home</a> > <a href='../../../../web/'>Web</a> > <a href='../../../../web/static-site-generators/'>Static Site Generators</a> > <a href='../../../../web/static-site-generators/hugo/'>Hugo</a> > Commands
+            <a href='../../../../'>Home</a> > <a href='../../../../coding/'>Coding</a> > <a href='../../../../coding/languages/'>Languages</a> > <a href='../../../../coding/languages/javascript/'>JavaScript</a> > String
           
         
           
@@ -881,10 +881,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#create-site-">Create site :</a></li>
-    <li><a href="#install-a-theme-">Install a theme :</a></li>
-    <li><a href="#create-first-post-">Create first post :</a></li>
-    <li><a href="#deploy">Deploy</a></li>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -902,57 +903,22 @@
           
             <h1>
               
-              Commands
+              String
             </h1>
           
 
         
 
 
-<h2 id="create-site-">Create site :</h2>
-<ul>
-<li>
-<p>Create <strong>site</strong> &ldquo;documentation&rdquo;:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new site documentation
-</code></pre></div></li>
-<li>
-<p>Launch <strong>server</strong> (with autoreload) :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo server
-</code></pre></div></li>
-</ul>
-<p>http://localhost:1313</p>
-<h2 id="install-a-theme-">Install a theme :</h2>
-<ul>
-<li>
-<p>Install <strong>theme</strong> :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd /themes
-git clone https://github.com/matcornic/hugo-theme-learn.git
-</code></pre></div></li>
-<li>
-<p>Activate new theme in <code>config.toml</code> :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-theme-learn&#34;</span>
-</code></pre></div></li>
-</ul>
-<h2 id="create-first-post-">Create first post :</h2>
-<ul>
-<li>
-<p>Create chapter <strong>(contains post)</strong> <code>static-website-generators</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd ..
-hugo new --kind chapter static-website-generators/_index.md
-</code></pre></div></li>
-<li>
-<p>Create post <code>hugo</code> in chapter <code>static-website-generators</code> :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new static-website-generators/hugo.md
-</code></pre></div></li>
-</ul>
-<h2 id="deploy">Deploy</h2>
-<ul>
-<li>Build :
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo
-</code></pre></div></li>
-</ul>
-<p>Build result in <code>/public</code></p>
-
+<h4 id="extract-part-of-an-array-or-a-string--new-array---slice"><strong>Extract part</strong> of an array or a string  (new array) -&gt; <strong>slice()</strong></h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello world&#39;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">5</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>); <span style="color:#75715e">// hello
+</span></code></pre></div><h4 id="split-string-by-separator---split"><strong>Split</strong> string by <strong>separator</strong> -&gt; <strong>split()</strong></h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">string</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello,world&#39;</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">string</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;,&#34;</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>); <span style="color:#75715e">// [&#34;hello&#34;, &#34;world&#34;]
+</span></code></pre></div>
 
 <footer class="footline">
 	
@@ -989,8 +955,6 @@ hugo new --kind chapter static-website-generators/_index.md
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1001,6 +965,214 @@ hugo new --kind chapter static-website-generators/_index.md
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
                     
                         
             
@@ -1062,19 +1234,6 @@ hugo new --kind chapter static-website-generators/_index.md
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
             
         
                     
@@ -1088,68 +1247,10 @@ hugo new --kind chapter static-website-generators/_index.md
 
                     
                     
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
                     
                     
 
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
                     
                         
             
@@ -1186,144 +1287,6 @@ hugo new --kind chapter static-website-generators/_index.md
             
             
                 
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1436,10 +1399,10 @@ hugo new --kind chapter static-website-generators/_index.md
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../../../web/static-site-generators/hugo/" title="Hugo"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../../../coding/languages/javascript/loop/" title="Loop"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../../../web/static-site-generators/hugo/settings/" title="Settings" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../../../coding/languages/markdown/" title="Markdown" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

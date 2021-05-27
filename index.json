@@ -81,7 +81,7 @@
 	"title": "Array",
 	"tags": [],
 	"description": "",
-	"content": "Extract part of an array or a string (new array) -\u0026gt; slice() const array = \u0026#39;hello world\u0026#39;; const result = array.slice(0,5); console.log(result); // hello Remove part of an array (replace array) -\u0026gt; splice() const array = [\u0026#39;h\u0026#39;,\u0026#39;e\u0026#39;,\u0026#39;l\u0026#39;,\u0026#39;l\u0026#39;,\u0026#39;o\u0026#39;]; const result = array.splice(0, 3); console.log(result); // hel Split string by separator -\u0026gt; split() const string = \u0026#39;hello,world\u0026#39;; const result = string.split(\u0026#34;,\u0026#34;); console.log(result); // [\u0026#34;hello\u0026#34;, \u0026#34;world\u0026#34;] "
+	"content": "Extract part of an array or a string (new array) -\u0026gt; slice() const array = \u0026#39;hello world\u0026#39;; const result = array.slice(0,5); console.log(result); // hello Remove part of an array (replace array) -\u0026gt; splice() const array = [\u0026#39;h\u0026#39;,\u0026#39;e\u0026#39;,\u0026#39;l\u0026#39;,\u0026#39;l\u0026#39;,\u0026#39;o\u0026#39;]; const result = array.splice(0, 3); console.log(result); // hel "
 },
 {
 	"uri": "http://example.org/coding/",
@@ -147,6 +147,13 @@
 	"content": "Training :\n Algo -\u0026gt; Codewars  "
 },
 {
+	"uri": "http://example.org/coding/languages/javascript/loop/",
+	"title": "Loop",
+	"tags": [],
+	"description": "",
+	"content": "for let str = \u0026#39;\u0026#39;; for (let i = 0; i \u0026lt; 9; i++) { str = str + i; } console.log(str); // expected output: \u0026#34;012345678\u0026#34; "
+},
+{
 	"uri": "http://example.org/coding/languages/markdown/",
 	"title": "Markdown",
 	"tags": [],
@@ -159,6 +166,13 @@
 	"tags": [],
 	"description": "",
 	"content": "   2021_05_17  Gatsby Hugo Jekyll     Learning curve  higher lesser    Language  JavaScript Go Ruby   Based on framework  React Go Liquid   Features  More Less    Plugins  To install lot of already included    Build speed  100 ms 15 sec      Usage :  Documentation website -\u0026gt; Hugo  "
+},
+{
+	"uri": "http://example.org/coding/languages/javascript/string/",
+	"title": "String",
+	"tags": [],
+	"description": "",
+	"content": "Extract part of an array or a string (new array) -\u0026gt; slice() const array = \u0026#39;hello world\u0026#39;; const result = array.slice(0,5); console.log(result); // hello Split string by separator -\u0026gt; split() const string = \u0026#39;hello,world\u0026#39;; const result = string.split(\u0026#34;,\u0026#34;); console.log(result); // [\u0026#34;hello\u0026#34;, \u0026#34;world\u0026#34;] "
 },
 {
 	"uri": "http://example.org/tools/",
