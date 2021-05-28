@@ -17,7 +17,7 @@ Sources :
 | **Singleton** | Only one instance of a singleton class can exist |  | 
 | **Constructor** |  Based on class. Execute code at class instantiation.  |  | 
 | **Factoy** | Class with generic interface that delegates the responsibility of object instantiation to its subclasses. | Need to manage or manipulate collections of objects that are different yet have many similar characteristics. |
-| **Strategy** | | |
+| **Strategy** | Encapsulates algorithms in such a way that they are interchangeable at runtime | |
 | **Adapter** | | | 
 | **Composite** | | |
 | **Decorator** | | |
