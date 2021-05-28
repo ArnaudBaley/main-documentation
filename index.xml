@@ -102,6 +102,15 @@ window.onload = () =&amp;gt; { &amp;#39;use strict&amp;#39;; if (&amp;#39;servic
     </item>
     
     <item>
+      <title>Class</title>
+      <link>http://example.org/coding/languages/javascript/class/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/javascript/class/</guid>
+      <description>TODO </description>
+    </item>
+    
+    <item>
       <title>Design Patterns</title>
       <link>http://example.org/coding/languages/javascript/design-patterns/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
