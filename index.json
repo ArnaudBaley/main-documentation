@@ -168,6 +168,13 @@
 	"content": "Table With header     Gatsby Hugo Jekyll     Learning curve higher lesser    Language JavaScript Go Ruby    | | Gatsby | Hugo | Jekyll | ----------- |----------- | ----------- | ----------- | | Learning curve | higher | lesser | | Language | JavaScript | Go | Ruby "
 },
 {
+	"uri": "http://example.org/coding/languages/javascript/object/",
+	"title": "Object",
+	"tags": [],
+	"description": "",
+	"content": "Object is empty : const a = {}; Object.keys(a).length // 0 (not empty returns 1) "
+},
+{
 	"uri": "http://example.org/web/static-site-generators/",
 	"title": "Static Site Generators",
 	"tags": [],

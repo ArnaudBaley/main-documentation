@@ -151,6 +151,15 @@ name: CI on: push jobs: deploy: runs-on: ubuntu-18.04 steps: - name: Git checkou
     </item>
     
     <item>
+      <title>Object</title>
+      <link>http://example.org/coding/languages/javascript/object/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/javascript/object/</guid>
+      <description>Object is empty : const a = {}; Object.keys(a).length // 0 (not empty returns 1) </description>
+    </item>
+    
+    <item>
       <title>String</title>
       <link>http://example.org/coding/languages/javascript/string/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
