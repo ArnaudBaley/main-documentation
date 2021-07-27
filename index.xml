@@ -187,10 +187,10 @@ expect(list.clickButton()).rejects.toEqual(new Error(&amp;#39;incorrect param &a
     
     <item>
       <title>MongoDB</title>
-      <link>http://example.org/coding/languages/mongodb/</link>
+      <link>http://example.org/coding/mongodb/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
       
-      <guid>http://example.org/coding/languages/mongodb/</guid>
+      <guid>http://example.org/coding/mongodb/</guid>
       <description>Execute script file in mongo shell
 mongo localhost:27017/acommeassure aca_parametrage.js Array not empty :
 db.getCollection(&#39;acaDocument&#39;).find({ &#39;associations.contrats&#39;: { $exists: true, $not: {$size: 0} } }) Date &amp;gt; :
@@ -210,10 +210,10 @@ const mockResponse = () =&amp;gt; { const res = {}; res.status = jest.fn().mockR
     
     <item>
       <title>NodeJs</title>
-      <link>http://example.org/coding/languages/nodejs/</link>
+      <link>http://example.org/coding/nodejs/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
       
-      <guid>http://example.org/coding/languages/nodejs/</guid>
+      <guid>http://example.org/coding/nodejs/</guid>
       <description>Transform callback TO Promise -&amp;gt; util.promisify
 const util = require(&amp;#39;util&amp;#39;); ..... const promisified = util.promisify(envoyerMailTemplateDynamique); await promisified(codeMarqueBlanche, extraParams, to, template); </description>
     </item>

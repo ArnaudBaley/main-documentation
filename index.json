@@ -189,7 +189,7 @@
 	"content": "Table With header     Gatsby Hugo Jekyll     Learning curve higher lesser    Language JavaScript Go Ruby    | | Gatsby | Hugo | Jekyll | ----------- |----------- | ----------- | ----------- | | Learning curve | higher | lesser | | Language | JavaScript | Go | Ruby "
 },
 {
-	"uri": "http://example.org/coding/languages/mongodb/",
+	"uri": "http://example.org/coding/mongodb/",
 	"title": "MongoDB",
 	"tags": [],
 	"description": "",
@@ -203,7 +203,7 @@
 	"content": "Mock API call :\nconst nock = require(\u0026#34;nock\u0026#34;); nock(\u0026#34;http://api.service:8080\u0026#34;) .defaultReplyHeaders({ \u0026#39;access-control-allow-origin\u0026#39;: \u0026#39;*\u0026#39;, \u0026#39;access-control-allow-credentials\u0026#39;: \u0026#39;true\u0026#39; }) .get(\u0026#34;/api/contrat/signature/matching\u0026#34;) .reply(200, { license: { key: \u0026#34;mit\u0026#34;, name: \u0026#34;MIT License\u0026#34;, spdx_id: \u0026#34;MIT\u0026#34;, url: \u0026#34;https://api.github.com/licenses/mit\u0026#34;, node_id: \u0026#34;MDc6TGljZW5zZTEz\u0026#34;, }, }); Mock Express middleware (Response) :\nconst mockResponse = () =\u0026gt; { const res = {}; res.status = jest.fn().mockReturnValue(res); res.json = jest.fn().mockReturnValue(res); res.send = jest.fn().mockReturnValue(res); return res; }; const res = mockResponse(); const test = await creation.sendMailDocuments(sendMailBody, res); // utiliser .send ou .json en fonction de la fonction. expect(res.json).toBeCalledWith({ \u0026#34;errorDetail\u0026#34;: \u0026#34;L\u0026#39;envoie de mail avec les documents a échoué\u0026#34; }); expect(res.status).toBeCalledWith(500); "
 },
 {
-	"uri": "http://example.org/coding/languages/nodejs/",
+	"uri": "http://example.org/coding/nodejs/",
 	"title": "NodeJs",
 	"tags": [],
 	"description": "",
