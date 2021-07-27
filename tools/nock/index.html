@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>GitHub :: My New Hugo Site</title>
+    <title>Nock (Mock API calls) :: My New Hugo Site</title>
 
     
     <link href="../../css/nucleus.css?1627395641" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../../tools/github/">
+  <body class="" data-url="../../tools/nock/">
     <nav id="sidebar" class="">
 
 
@@ -543,7 +543,7 @@
  
   
     
-      <li data-nav-id="/tools/github/" title="GitHub" class="dd-item active">
+      <li data-nav-id="/tools/github/" title="GitHub" class="dd-item ">
         <a href="../../tools/github/">
         GitHub
         
@@ -585,7 +585,7 @@
  
   
     
-      <li data-nav-id="/tools/nock/" title="Nock (Mock API calls)" class="dd-item ">
+      <li data-nav-id="/tools/nock/" title="Nock (Mock API calls)" class="dd-item active">
         <a href="../../tools/nock/">
         Nock (Mock API calls)
         
@@ -1043,7 +1043,7 @@
             
           
           
-            <a href='../../'>Home</a> > <a href='../../tools/'>Tools</a> > GitHub
+            <a href='../../'>Home</a> > <a href='../../tools/'>Tools</a> > Nock (Mock API calls)
           
         
           
@@ -1056,16 +1056,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#activate-pages">Activate pages</a></li>
-        <li><a href="#actions-workflow">Actions (workflow)</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -1081,43 +1072,48 @@
           
             <h1>
               
-              GitHub
+              Nock (Mock API calls)
             </h1>
           
 
         
 
 
-<h3 id="activate-pages">Activate pages</h3>
-<p>-Repository -&gt; Settings -&gt; Options -&gt; GitHub Pages</p>
-<h3 id="actions-workflow">Actions (workflow)</h3>
-<p>Create file : <code>.github/workflows/workflow.yml</code></p>
-<p>Example (auto build hugo static site generator on push) :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">CI</span>
-<span style="color:#f92672">on</span>: <span style="color:#ae81ff">push</span>
-<span style="color:#f92672">jobs</span>:
-  <span style="color:#f92672">deploy</span>:
-    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-18.04</span>
-    <span style="color:#f92672">steps</span>:
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Git checkout</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
+<p><strong>Mock API call :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nock</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;nock&#34;</span>);
 
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Update theme    </span>
-        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">git submodule update --init --recursive</span>
+<span style="color:#a6e22e">nock</span>(<span style="color:#e6db74">&#34;http://api.service:8080&#34;</span>)
+  .<span style="color:#a6e22e">defaultReplyHeaders</span>({
+    <span style="color:#e6db74">&#39;access-control-allow-origin&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;*&#39;</span>,
+    <span style="color:#e6db74">&#39;access-control-allow-credentials&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;true&#39;</span>
+  })
+  .<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/api/contrat/signature/matching&#34;</span>)
+  .<span style="color:#a6e22e">reply</span>(<span style="color:#ae81ff">200</span>, {
+    <span style="color:#a6e22e">license</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">key</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;mit&#34;</span>,
+      <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;MIT License&#34;</span>,
+      <span style="color:#a6e22e">spdx_id</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;MIT&#34;</span>,
+      <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://api.github.com/licenses/mit&#34;</span>,
+      <span style="color:#a6e22e">node_id</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;MDc6TGljZW5zZTEz&#34;</span>,
+    },
+  });
+</code></pre></div><p><strong>Mock Express middleware (Response) :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mockResponse</span> <span style="color:#f92672">=</span> () =&gt; {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> {};
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jest</span>.<span style="color:#a6e22e">fn</span>().<span style="color:#a6e22e">mockReturnValue</span>(<span style="color:#a6e22e">res</span>);
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jest</span>.<span style="color:#a6e22e">fn</span>().<span style="color:#a6e22e">mockReturnValue</span>(<span style="color:#a6e22e">res</span>);
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jest</span>.<span style="color:#a6e22e">fn</span>().<span style="color:#a6e22e">mockReturnValue</span>(<span style="color:#a6e22e">res</span>);
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">res</span>;
+};
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">mockResponse</span>();
 
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup hugo</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-hugo@v2</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">test</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">creation</span>.<span style="color:#a6e22e">sendMailDocuments</span>(<span style="color:#a6e22e">sendMailBody</span>, <span style="color:#a6e22e">res</span>);
 
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build</span>
-        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">hugo</span>
-
-      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy</span>
-        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-gh-pages@v3</span>
-        <span style="color:#f92672">with</span>:
-          <span style="color:#f92672">personal_token</span>: <span style="color:#ae81ff">${{ secrets.TOKEN }}        </span>
-          <span style="color:#f92672">publish_dir</span>: <span style="color:#ae81ff">./public</span>
-          <span style="color:#f92672">keep_files</span>: <span style="color:#66d9ef">true</span>
-          <span style="color:#f92672">publish_branch</span>: <span style="color:#ae81ff">docs</span>
+<span style="color:#75715e">// utiliser .send ou .json en fonction de la fonction.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>).<span style="color:#a6e22e">toBeCalledWith</span>({
+    <span style="color:#e6db74">&#34;errorDetail&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;L&#39;envoie de mail avec les documents a échoué&#34;</span>
+});
+<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>).<span style="color:#a6e22e">toBeCalledWith</span>(<span style="color:#ae81ff">500</span>);
 </code></pre></div>
 
 <footer class="footline">
@@ -1453,26 +1449,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1500,6 +1476,23 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1507,6 +1500,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1744,10 +1740,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../tools/git/" title="Git"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../tools/jest/" title="Jest (Unit test)"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../tools/jest/" title="Jest (Unit test)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../web/" title="Web" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

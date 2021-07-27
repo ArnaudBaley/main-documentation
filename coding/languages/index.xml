@@ -7,5 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 May 2021 15:55:39 +0200</lastBuildDate><atom:link href="http://example.org/coding/languages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MongoDB</title>
+      <link>http://example.org/coding/languages/mongodb/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/mongodb/</guid>
+      <description>Execute script file in mongo shell
+mongo localhost:27017/acommeassure aca_parametrage.js Array not empty :
+db.getCollection(&#39;acaDocument&#39;).find({ &#39;associations.contrats&#39;: { $exists: true, $not: {$size: 0} } }) Date &amp;gt; :
+&#39;historiqueDocument.creation.date&#39;: {&amp;quot;$gte&amp;quot;:new Date(&amp;quot;2020-01-01&amp;quot;)} </description>
+    </item>
+    
+    <item>
+      <title>NodeJs</title>
+      <link>http://example.org/coding/languages/nodejs/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/nodejs/</guid>
+      <description>Transform callback TO Promise -&amp;gt; util.promisify
+const util = require(&amp;#39;util&amp;#39;); ..... const promisified = util.promisify(envoyerMailTemplateDynamique); await promisified(codeMarqueBlanche, extraParams, to, template); </description>
+    </item>
+    
   </channel>
 </rss>

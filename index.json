@@ -105,6 +105,13 @@
 	"content": "Sources :\n JavaScript Design Patterns (BetterProgramming)  List            Module Organize code, encapsulation.     Observer Update an object when an another object changes (see : $emit et $broadcast in JS frameworks).     Prototype “skeleton” of an existing object to create or instantiate new objects.     Singleton Only one instance of a singleton class can exist     Constructor Based on class. Execute code at class instantiation.     Factoy Class with generic interface that delegates the responsibility of object instantiation to its subclasses. Need to manage or manipulate collections of objects that are different yet have many similar characteristics.    Strategy Encapsulates algorithms in such a way that they are interchangeable at runtime     Adapter      Composite      Decorator      Façade      Flyweight      Proxy      Chain of Responsibility      Command      Iterator      Mediator      State      Template       Singleton class Database { constructor(data) { if (Database.exists) { return Database.instance; } this._data = data; Database.instance = this; Database.exists = true; return this; } getData() { return this._data; } setData(data) { this._data = data; } } // usage const mongo = new Database(\u0026#39;mongo\u0026#39;); console.log(mongo.getData()); // mongo  const mysql = new Database(\u0026#39;mysql\u0026#39;); console.log(mysql.getData()); // mongo Factory class BallFactory { constructor() { this.createBall = function(type) { let ball; if (type === \u0026#39;football\u0026#39; || type === \u0026#39;soccer\u0026#39;) ball = new Football(); else if (type === \u0026#39;basketball\u0026#39;) ball = new Basketball(); ball.roll = function() { return `The ${this._type}is rolling.`; }; return ball; }; } } class Football { constructor() { this._type = \u0026#39;football\u0026#39;; this.kick = function() { return \u0026#39;You kicked the football.\u0026#39;; }; } } class Basketball { constructor() { this._type = \u0026#39;basketball\u0026#39;; this.bounce = function() { return \u0026#39;You bounced the basketball.\u0026#39;; }; } } // creating objects const factory = new BallFactory(); const myFootball = factory.createBall(\u0026#39;football\u0026#39;); const myBasketball = factory.createBall(\u0026#39;basketball\u0026#39;); console.log(myFootball.roll()); // The football is rolling. console.log(myBasketball.roll()); // The basketball is rolling. console.log(myFootball.kick()); // You kicked the football. console.log(myBasketball.bounce()); // You bounced the basketball. "
 },
 {
+	"uri": "http://example.org/tools/docker/",
+	"title": "Docker",
+	"tags": [],
+	"description": "",
+	"content": "host IP from container\nsudo ip addr show docker0 Shell in container\ndocker exec -it \u0026lt;container name\u0026gt; /bin/bash Extract container id from name :\n$(docker ps -qlf \u0026#34;name=stack-dev_cherm\u0026#34;) Copy file in container\nPrerequisite : create destination folder in container :\nmkdir retourpatrimoine cat /home/arnaudb/Bureau/DATA/PROJETS/BATCH/retourPatrimoine_creerCompteServeurAuth/adherent_lfm_888888_O.csv | docker exec -i $(docker ps -qlf \u0026#34;name=stack-dev_cherm\u0026#34;) /bin/bash -c \u0026#39;cat \u0026gt; /data/retourpatrimoine/adherent_lfm_888888_O.csv\u0026#39; Show full error at service mount :\ndocker service ps --no-trunc mysql "
+},
+{
 	"uri": "http://example.org/tools/git/",
 	"title": "Git",
 	"tags": [],
@@ -133,6 +140,20 @@
 	"content": "Links :  JSFiddle (JS online environmnent )  "
 },
 {
+	"uri": "http://example.org/tools/jest/",
+	"title": "Jest (Unit test)",
+	"tags": [],
+	"description": "",
+	"content": "Jest - Expect to throw error : synchronous :\nexpect(() =\u0026gt; list.clickButton()).toThrow('incorrect param \u0026quot;action\u0026quot;'); asynchronous :\nexpect(list.clickButton()).rejects.toEqual(new Error('incorrect param \u0026quot;action\u0026quot;')); "
+},
+{
+	"uri": "http://example.org/coding/languages/javascript/jsdoc/",
+	"title": "JSdoc",
+	"tags": [],
+	"description": "",
+	"content": "/** * Returns x raised to the n-th power. * * @param {number} x The number to raise. * @param {number} n The power, must be a natural number. * @return {number} x raised to the n-th power. */ "
+},
+{
 	"uri": "http://example.org/learning/js-kata/",
 	"title": "Kata JS",
 	"tags": [],
@@ -151,7 +172,7 @@
 	"title": "Learning",
 	"tags": [],
 	"description": "",
-	"content": "Training :\n Algo -\u0026gt; Codewars  "
+	"content": "Training :  Algo -\u0026gt; Codewars  Prepare interview :   The System Design Primer\n  Coding Interview University\n  Interviews\n  "
 },
 {
 	"uri": "http://example.org/coding/languages/javascript/loop/",
@@ -168,11 +189,39 @@
 	"content": "Table With header     Gatsby Hugo Jekyll     Learning curve higher lesser    Language JavaScript Go Ruby    | | Gatsby | Hugo | Jekyll | ----------- |----------- | ----------- | ----------- | | Learning curve | higher | lesser | | Language | JavaScript | Go | Ruby "
 },
 {
+	"uri": "http://example.org/coding/languages/mongodb/",
+	"title": "MongoDB",
+	"tags": [],
+	"description": "",
+	"content": "Execute script file in mongo shell\nmongo localhost:27017/acommeassure aca_parametrage.js Array not empty :\ndb.getCollection('acaDocument').find({ 'associations.contrats': { $exists: true, $not: {$size: 0} } }) Date \u0026gt; :\n'historiqueDocument.creation.date': {\u0026quot;$gte\u0026quot;:new Date(\u0026quot;2020-01-01\u0026quot;)} "
+},
+{
+	"uri": "http://example.org/tools/nock/",
+	"title": "Nock (Mock API calls)",
+	"tags": [],
+	"description": "",
+	"content": "Mock API call :\nconst nock = require(\u0026#34;nock\u0026#34;); nock(\u0026#34;http://api.service:8080\u0026#34;) .defaultReplyHeaders({ \u0026#39;access-control-allow-origin\u0026#39;: \u0026#39;*\u0026#39;, \u0026#39;access-control-allow-credentials\u0026#39;: \u0026#39;true\u0026#39; }) .get(\u0026#34;/api/contrat/signature/matching\u0026#34;) .reply(200, { license: { key: \u0026#34;mit\u0026#34;, name: \u0026#34;MIT License\u0026#34;, spdx_id: \u0026#34;MIT\u0026#34;, url: \u0026#34;https://api.github.com/licenses/mit\u0026#34;, node_id: \u0026#34;MDc6TGljZW5zZTEz\u0026#34;, }, }); Mock Express middleware (Response) :\nconst mockResponse = () =\u0026gt; { const res = {}; res.status = jest.fn().mockReturnValue(res); res.json = jest.fn().mockReturnValue(res); res.send = jest.fn().mockReturnValue(res); return res; }; const res = mockResponse(); const test = await creation.sendMailDocuments(sendMailBody, res); // utiliser .send ou .json en fonction de la fonction. expect(res.json).toBeCalledWith({ \u0026#34;errorDetail\u0026#34;: \u0026#34;L\u0026#39;envoie de mail avec les documents a échoué\u0026#34; }); expect(res.status).toBeCalledWith(500); "
+},
+{
+	"uri": "http://example.org/coding/languages/nodejs/",
+	"title": "NodeJs",
+	"tags": [],
+	"description": "",
+	"content": "Transform callback TO Promise -\u0026gt; util.promisify\nconst util = require(\u0026#39;util\u0026#39;); ..... const promisified = util.promisify(envoyerMailTemplateDynamique); await promisified(codeMarqueBlanche, extraParams, to, template); "
+},
+{
 	"uri": "http://example.org/coding/languages/javascript/object/",
 	"title": "Object",
 	"tags": [],
 	"description": "",
 	"content": "Object is empty : const a = {}; Object.keys(a).length // 0 (not empty returns 1) "
+},
+{
+	"uri": "http://example.org/web/public-api/",
+	"title": "public API",
+	"tags": [],
+	"description": "",
+	"content": "Public APIs\n"
 },
 {
 	"uri": "http://example.org/web/static-site-generators/",

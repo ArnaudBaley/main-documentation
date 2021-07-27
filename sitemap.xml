@@ -47,6 +47,9 @@
     <loc>http://example.org/coding/languages/javascript/design-patterns/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
+    <loc>http://example.org/tools/docker/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
     <loc>http://example.org/tools/git/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
@@ -57,6 +60,12 @@
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
     <loc>http://example.org/coding/languages/javascript/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tools/jest/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/coding/languages/javascript/jsdoc/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
     <loc>http://example.org/learning/js-kata/</loc>
@@ -74,7 +83,19 @@
     <loc>http://example.org/coding/languages/markdown/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
+    <loc>http://example.org/coding/languages/mongodb/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tools/nock/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/coding/languages/nodejs/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
     <loc>http://example.org/coding/languages/javascript/object/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/web/public-api/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
     <loc>http://example.org/web/static-site-generators/</loc>
