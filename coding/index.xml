@@ -13,9 +13,9 @@
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
       
       <guid>http://example.org/coding/jest/</guid>
-      <description>Jest - Expect to throw error : synchronous :
-expect(() =&amp;gt; list.clickButton()).toThrow(&#39;incorrect param &amp;quot;action&amp;quot;&#39;); asynchronous :
-expect(list.clickButton()).rejects.toEqual(new Error(&#39;incorrect param &amp;quot;action&amp;quot;&#39;)); </description>
+      <description>Boilerplate : import errorUtil from &amp;#39;../../../src/public/utils/errorUtil&amp;#39;; describe(&amp;#39;detectNetworkError&amp;#39;, () =&amp;gt; { test(&amp;#39;detectNetworkError : wrong parameters&amp;#39;, () =&amp;gt; { expect(errorUtil.detectNetworkError()).toBe(null); }); }); Expect to throw error : synchronous :
+expect(() =&amp;gt; list.clickButton()).toThrow(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;); asynchronous :
+expect(list.clickButton()).rejects.toEqual(new Error(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;)); </description>
     </item>
     
     <item>

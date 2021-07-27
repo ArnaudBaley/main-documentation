@@ -12,22 +12,22 @@
     <title>Jest (Unit test) :: My New Hugo Site</title>
 
     
-    <link href="../../css/nucleus.css?1627395838" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1627395838" rel="stylesheet">
-    <link href="../../css/hybrid.css?1627395838" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1627395838" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1627395838" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1627395838" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1627395838" rel="stylesheet">
-    <link href="../../css/theme.css?1627395838" rel="stylesheet">
-    <link href="../../css/tabs.css?1627395838" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1627395838" rel="stylesheet">
+    <link href="../../css/nucleus.css?1627396051" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1627396051" rel="stylesheet">
+    <link href="../../css/hybrid.css?1627396051" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1627396051" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1627396051" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1627396051" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1627396051" rel="stylesheet">
+    <link href="../../css/theme.css?1627396051" rel="stylesheet">
+    <link href="../../css/tabs.css?1627396051" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1627396051" rel="stylesheet">
     
-    <link href="../../css/theme-blue.css?1627395838" rel="stylesheet">
+    <link href="../../css/theme-blue.css?1627396051" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1627395838"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1627396051"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1627395838"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1627395838"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1627396051"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1627396051"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/example.org\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1627395838"></script>
+<script type="text/javascript" src="../../js/search.js?1627396051"></script>
 
     
   </div>
@@ -1087,12 +1087,20 @@
         
 
 
-<h4 id="jest---expect-to-throw-error-">Jest - Expect to throw error :</h4>
+<h4 id="boilerplate-">Boilerplate :</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">errorUtil</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../../../src/public/utils/errorUtil&#39;</span>;
+
+<span style="color:#a6e22e">describe</span>(<span style="color:#e6db74">&#39;detectNetworkError&#39;</span>, () =&gt; {
+    <span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#39;detectNetworkError : wrong parameters&#39;</span>, () =&gt; {
+        <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">errorUtil</span>.<span style="color:#a6e22e">detectNetworkError</span>()).<span style="color:#a6e22e">toBe</span>(<span style="color:#66d9ef">null</span>);
+    });
+});
+</code></pre></div><h4 id="expect-to-throw-error-">Expect to throw error :</h4>
 <p><strong>synchronous :</strong></p>
-<pre><code>expect(() =&gt; list.clickButton()).toThrow('incorrect param &quot;action&quot;');
-</code></pre><p><strong>asynchronous :</strong></p>
-<pre><code>expect(list.clickButton()).rejects.toEqual(new Error('incorrect param &quot;action&quot;'));
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"><span style="color:#a6e22e">expect</span>(() =&gt; <span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">clickButton</span>()).<span style="color:#a6e22e">toThrow</span>(<span style="color:#e6db74">&#39;incorrect param &#34;action&#34;&#39;</span>);
+</code></pre></div><p><strong>asynchronous :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"><span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">list</span>.<span style="color:#a6e22e">clickButton</span>()).<span style="color:#a6e22e">rejects</span>.<span style="color:#a6e22e">toEqual</span>(<span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;incorrect param &#34;action&#34;&#39;</span>));
+</code></pre></div>
 
 <footer class="footline">
 	
@@ -1725,19 +1733,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1627395838"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1627395838"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1627395838"></script>
-    <script src="../../js/jquery.sticky.js?1627395838"></script>
-    <script src="../../js/featherlight.min.js?1627395838"></script>
-    <script src="../../js/highlight.pack.js?1627395838"></script>
+    <script src="../../js/clipboard.min.js?1627396051"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1627396051"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1627396051"></script>
+    <script src="../../js/jquery.sticky.js?1627396051"></script>
+    <script src="../../js/featherlight.min.js?1627396051"></script>
+    <script src="../../js/highlight.pack.js?1627396051"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1627395838"></script>
-    <script src="../../js/learn.js?1627395838"></script>
-    <script src="../../js/hugo-learn.js?1627395838"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1627396051"></script>
+    <script src="../../js/learn.js?1627396051"></script>
+    <script src="../../js/hugo-learn.js?1627396051"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1627395838"></script>
+            <script src="../../mermaid/mermaid.js?1627396051"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

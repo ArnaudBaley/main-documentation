@@ -144,7 +144,7 @@
 	"title": "Jest (Unit test)",
 	"tags": [],
 	"description": "",
-	"content": "Jest - Expect to throw error : synchronous :\nexpect(() =\u0026gt; list.clickButton()).toThrow('incorrect param \u0026quot;action\u0026quot;'); asynchronous :\nexpect(list.clickButton()).rejects.toEqual(new Error('incorrect param \u0026quot;action\u0026quot;')); "
+	"content": "Boilerplate : import errorUtil from \u0026#39;../../../src/public/utils/errorUtil\u0026#39;; describe(\u0026#39;detectNetworkError\u0026#39;, () =\u0026gt; { test(\u0026#39;detectNetworkError : wrong parameters\u0026#39;, () =\u0026gt; { expect(errorUtil.detectNetworkError()).toBe(null); }); }); Expect to throw error : synchronous :\nexpect(() =\u0026gt; list.clickButton()).toThrow(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;); asynchronous :\nexpect(list.clickButton()).rejects.toEqual(new Error(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;)); "
 },
 {
 	"uri": "http://example.org/coding/languages/javascript/jsdoc/",
