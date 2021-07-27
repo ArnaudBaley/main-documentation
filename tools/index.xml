@@ -34,27 +34,5 @@ Example (auto build hugo static site generator on push) :
 name: CI on: push jobs: deploy: runs-on: ubuntu-18.04 steps: - name: Git checkout uses: actions/checkout@v2 - name: Update theme  run: git submodule update --init --recursive - name: Setup hugo uses: peaceiris/actions-hugo@v2 - name: Build run: hugo - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: personal_token: ${{ secrets.</description>
     </item>
     
-    <item>
-      <title>Jest (Unit test)</title>
-      <link>http://example.org/tools/jest/</link>
-      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
-      
-      <guid>http://example.org/tools/jest/</guid>
-      <description>Jest - Expect to throw error : synchronous :
-expect(() =&amp;gt; list.clickButton()).toThrow(&#39;incorrect param &amp;quot;action&amp;quot;&#39;); asynchronous :
-expect(list.clickButton()).rejects.toEqual(new Error(&#39;incorrect param &amp;quot;action&amp;quot;&#39;)); </description>
-    </item>
-    
-    <item>
-      <title>Nock (Mock API calls)</title>
-      <link>http://example.org/tools/nock/</link>
-      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
-      
-      <guid>http://example.org/tools/nock/</guid>
-      <description>Mock API call :
-const nock = require(&amp;#34;nock&amp;#34;); nock(&amp;#34;http://api.service:8080&amp;#34;) .defaultReplyHeaders({ &amp;#39;access-control-allow-origin&amp;#39;: &amp;#39;*&amp;#39;, &amp;#39;access-control-allow-credentials&amp;#39;: &amp;#39;true&amp;#39; }) .get(&amp;#34;/api/contrat/signature/matching&amp;#34;) .reply(200, { license: { key: &amp;#34;mit&amp;#34;, name: &amp;#34;MIT License&amp;#34;, spdx_id: &amp;#34;MIT&amp;#34;, url: &amp;#34;https://api.github.com/licenses/mit&amp;#34;, node_id: &amp;#34;MDc6TGljZW5zZTEz&amp;#34;, }, }); Mock Express middleware (Response) :
-const mockResponse = () =&amp;gt; { const res = {}; res.status = jest.fn().mockReturnValue(res); res.json = jest.fn().mockReturnValue(res); res.send = jest.fn().mockReturnValue(res); return res; }; const res = mockResponse(); const test = await creation.sendMailDocuments(sendMailBody, res); // utiliser .</description>
-    </item>
-    
   </channel>
 </rss>
