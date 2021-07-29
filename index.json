@@ -112,6 +112,13 @@
 	"content": "host IP from container\nsudo ip addr show docker0 Shell in container\ndocker exec -it \u0026lt;container name\u0026gt; /bin/bash Extract container id from name :\n$(docker ps -qlf \u0026#34;name=stack-dev_cherm\u0026#34;) Copy file in container\nPrerequisite : create destination folder in container :\nmkdir retourpatrimoine cat /home/arnaudb/Bureau/DATA/PROJETS/BATCH/retourPatrimoine_creerCompteServeurAuth/adherent_lfm_888888_O.csv | docker exec -i $(docker ps -qlf \u0026#34;name=stack-dev_cherm\u0026#34;) /bin/bash -c \u0026#39;cat \u0026gt; /data/retourpatrimoine/adherent_lfm_888888_O.csv\u0026#39; Show full error at service mount :\ndocker service ps --no-trunc mysql "
 },
 {
+	"uri": "http://example.org/coding/tu-unit-test/jest/errors/",
+	"title": "Errors",
+	"tags": [],
+	"description": "",
+	"content": "Expect to throw error : synchronous :\nexpect(() =\u0026gt; list.clickButton()).toThrow(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;); asynchronous :\nexpect(list.clickButton()).rejects.toEqual(new Error(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;)); "
+},
+{
 	"uri": "http://example.org/tools/git/",
 	"title": "Git",
 	"tags": [],
@@ -145,13 +152,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Boilerplate : import errorUtil from \u0026#39;../../../src/public/utils/errorUtil\u0026#39;; describe(\u0026#39;detectNetworkError\u0026#39;, () =\u0026gt; { test(\u0026#39;detectNetworkError : wrong parameters\u0026#39;, () =\u0026gt; { expect(errorUtil.detectNetworkError()).toBe(null); }); }); "
-},
-{
-	"uri": "http://example.org/coding/tu-unit-test/jest/errors/",
-	"title": "Jest (Unit test)",
-	"tags": [],
-	"description": "",
-	"content": "Expect to throw error : synchronous :\nexpect(() =\u0026gt; list.clickButton()).toThrow(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;); asynchronous :\nexpect(list.clickButton()).rejects.toEqual(new Error(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;)); "
 },
 {
 	"uri": "http://example.org/coding/languages/javascript/jsdoc/",

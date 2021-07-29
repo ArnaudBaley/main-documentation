@@ -50,6 +50,9 @@
     <loc>http://example.org/tools/docker/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
+    <loc>http://example.org/coding/tu-unit-test/jest/errors/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
     <loc>http://example.org/tools/git/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
@@ -63,9 +66,6 @@
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
     <loc>http://example.org/coding/tu-unit-test/jest/</loc>
-    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
-  </url><url>
-    <loc>http://example.org/coding/tu-unit-test/jest/errors/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
     <loc>http://example.org/coding/languages/javascript/jsdoc/</loc>

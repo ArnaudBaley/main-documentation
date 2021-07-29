@@ -136,6 +136,17 @@ docker service ps --no-trunc mysql </description>
     </item>
     
     <item>
+      <title>Errors</title>
+      <link>http://example.org/coding/tu-unit-test/jest/errors/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/tu-unit-test/jest/errors/</guid>
+      <description>Expect to throw error : synchronous :
+expect(() =&amp;gt; list.clickButton()).toThrow(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;); asynchronous :
+expect(list.clickButton()).rejects.toEqual(new Error(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;)); </description>
+    </item>
+    
+    <item>
       <title>GitHub</title>
       <link>http://example.org/tools/github/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
@@ -145,17 +156,6 @@ docker service ps --no-trunc mysql </description>
 Actions (workflow) Create file : .github/workflows/workflow.yml
 Example (auto build hugo static site generator on push) :
 name: CI on: push jobs: deploy: runs-on: ubuntu-18.04 steps: - name: Git checkout uses: actions/checkout@v2 - name: Update theme  run: git submodule update --init --recursive - name: Setup hugo uses: peaceiris/actions-hugo@v2 - name: Build run: hugo - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: personal_token: ${{ secrets.</description>
-    </item>
-    
-    <item>
-      <title>Jest (Unit test)</title>
-      <link>http://example.org/coding/tu-unit-test/jest/errors/</link>
-      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
-      
-      <guid>http://example.org/coding/tu-unit-test/jest/errors/</guid>
-      <description>Expect to throw error : synchronous :
-expect(() =&amp;gt; list.clickButton()).toThrow(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;); asynchronous :
-expect(list.clickButton()).rejects.toEqual(new Error(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;)); </description>
     </item>
     
     <item>
