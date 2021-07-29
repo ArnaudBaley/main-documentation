@@ -149,11 +149,11 @@ name: CI on: push jobs: deploy: runs-on: ubuntu-18.04 steps: - name: Git checkou
     
     <item>
       <title>Jest (Unit test)</title>
-      <link>http://example.org/coding/jest/</link>
+      <link>http://example.org/coding/tu-unit-test/jest/errors/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
       
-      <guid>http://example.org/coding/jest/</guid>
-      <description>Boilerplate : import errorUtil from &amp;#39;../../../src/public/utils/errorUtil&amp;#39;; describe(&amp;#39;detectNetworkError&amp;#39;, () =&amp;gt; { test(&amp;#39;detectNetworkError : wrong parameters&amp;#39;, () =&amp;gt; { expect(errorUtil.detectNetworkError()).toBe(null); }); }); Expect to throw error : synchronous :
+      <guid>http://example.org/coding/tu-unit-test/jest/errors/</guid>
+      <description>Expect to throw error : synchronous :
 expect(() =&amp;gt; list.clickButton()).toThrow(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;); asynchronous :
 expect(list.clickButton()).rejects.toEqual(new Error(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;)); </description>
     </item>
@@ -183,6 +183,15 @@ expect(list.clickButton()).rejects.toEqual(new Error(&amp;#39;incorrect param &a
       
       <guid>http://example.org/coding/languages/javascript/loop/</guid>
       <description>for let str = &amp;#39;&amp;#39;; for (let i = 0; i &amp;lt; 9; i++) { str = str + i; } console.log(str); // expected output: &amp;#34;012345678&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>Mock Express Request &amp; Response</title>
+      <link>http://example.org/coding/tu-unit-test/jest/mock-express-req-res/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/tu-unit-test/jest/mock-express-req-res/</guid>
+      <description>Mock functions helper.js: const mockServerResponse = () =&amp;gt; { const response = {}; response.body = { message: &amp;#39;All good&amp;#39; } response.status = 200; return response; }; const mockExpressRes = () =&amp;gt; { const res = {}; res.send = jest.fn().mockReturnValue(res) res.status = jest.fn().mockReturnValue(res) res.json = jest.fn().mockReturnValue(res) res.sendStatus = jest.fn().mockReturnValue(res) return res }; module.exports = { mockServerResponse, mockExpressRes, }; Use in test : import network from &amp;#39;../../../../src/server/utils/network&amp;#39;; import helper from &amp;#39;../../../Helper/back/helper&amp;#39;; describe(&amp;#39;passePlat&amp;#39;, () =&amp;gt; { test(&amp;#39;passePlat : status 200 + body response&amp;#39;, () =&amp;gt; { const response = helper.</description>
     </item>
     
     <item>

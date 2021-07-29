@@ -140,11 +140,18 @@
 	"content": "Links :  JSFiddle (JS online environmnent )  "
 },
 {
-	"uri": "http://example.org/coding/jest/",
+	"uri": "http://example.org/coding/tu-unit-test/jest/",
+	"title": "Jest",
+	"tags": [],
+	"description": "",
+	"content": "Boilerplate : import errorUtil from \u0026#39;../../../src/public/utils/errorUtil\u0026#39;; describe(\u0026#39;detectNetworkError\u0026#39;, () =\u0026gt; { test(\u0026#39;detectNetworkError : wrong parameters\u0026#39;, () =\u0026gt; { expect(errorUtil.detectNetworkError()).toBe(null); }); }); "
+},
+{
+	"uri": "http://example.org/coding/tu-unit-test/jest/errors/",
 	"title": "Jest (Unit test)",
 	"tags": [],
 	"description": "",
-	"content": "Boilerplate : import errorUtil from \u0026#39;../../../src/public/utils/errorUtil\u0026#39;; describe(\u0026#39;detectNetworkError\u0026#39;, () =\u0026gt; { test(\u0026#39;detectNetworkError : wrong parameters\u0026#39;, () =\u0026gt; { expect(errorUtil.detectNetworkError()).toBe(null); }); }); Expect to throw error : synchronous :\nexpect(() =\u0026gt; list.clickButton()).toThrow(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;); asynchronous :\nexpect(list.clickButton()).rejects.toEqual(new Error(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;)); "
+	"content": "Expect to throw error : synchronous :\nexpect(() =\u0026gt; list.clickButton()).toThrow(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;); asynchronous :\nexpect(list.clickButton()).rejects.toEqual(new Error(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;)); "
 },
 {
 	"uri": "http://example.org/coding/languages/javascript/jsdoc/",
@@ -187,6 +194,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Table With header     Gatsby Hugo Jekyll     Learning curve higher lesser    Language JavaScript Go Ruby    | | Gatsby | Hugo | Jekyll | ----------- |----------- | ----------- | ----------- | | Learning curve | higher | lesser | | Language | JavaScript | Go | Ruby "
+},
+{
+	"uri": "http://example.org/coding/tu-unit-test/jest/mock-express-req-res/",
+	"title": "Mock Express Request &amp; Response",
+	"tags": [],
+	"description": "",
+	"content": "Mock functions helper.js: const mockServerResponse = () =\u0026gt; { const response = {}; response.body = { message: \u0026#39;All good\u0026#39; } response.status = 200; return response; }; const mockExpressRes = () =\u0026gt; { const res = {}; res.send = jest.fn().mockReturnValue(res) res.status = jest.fn().mockReturnValue(res) res.json = jest.fn().mockReturnValue(res) res.sendStatus = jest.fn().mockReturnValue(res) return res }; module.exports = { mockServerResponse, mockExpressRes, }; Use in test : import network from \u0026#39;../../../../src/server/utils/network\u0026#39;; import helper from \u0026#39;../../../Helper/back/helper\u0026#39;; describe(\u0026#39;passePlat\u0026#39;, () =\u0026gt; { test(\u0026#39;passePlat : status 200 + body response\u0026#39;, () =\u0026gt; { const response = helper.mockServerResponse(); const res = helper.mockExpressRes(); network.passePlat(response, res); expect(res.status).toHaveBeenCalledWith(200); expect(res.send).toHaveBeenCalledWith({\u0026#34;message\u0026#34;: \u0026#34;All good\u0026#34;}); expect(res.sendStatus).not.toHaveBeenCalled(); }); }); "
 },
 {
 	"uri": "http://example.org/coding/mongodb/",
@@ -240,6 +254,13 @@
 {
 	"uri": "http://example.org/tools/",
 	"title": "Tools",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/coding/tu-unit-test/",
+	"title": "TU (Unit Test)",
 	"tags": [],
 	"description": "",
 	"content": ""

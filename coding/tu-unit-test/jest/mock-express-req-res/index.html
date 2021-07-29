@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../../../images/favicon.png" type="image/png">
 
-    <title>Commands :: My New Hugo Site</title>
+    <title>Mock Express Request &amp; Response :: My New Hugo Site</title>
 
     
     <link href="../../../../css/nucleus.css?1627566455" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../../../../web/static-site-generators/hugo/commands/">
+  <body class="" data-url="../../../../coding/tu-unit-test/jest/mock-express-req-res/">
     <nav id="sidebar" class="">
 
 
@@ -88,7 +88,7 @@
   
     
     <li data-nav-id="/coding/" title="Coding" class="dd-item
-        
+        parent
         
         
         ">
@@ -427,7 +427,7 @@
   
     
     <li data-nav-id="/coding/tu-unit-test/" title="TU (Unit Test)" class="dd-item
-        
+        parent
         
         
         ">
@@ -456,7 +456,7 @@
   
     
     <li data-nav-id="/coding/tu-unit-test/jest/" title="Jest" class="dd-item
-        
+        parent
         
         
         ">
@@ -503,7 +503,7 @@
  
   
     
-      <li data-nav-id="/coding/tu-unit-test/jest/mock-express-req-res/" title="Mock Express Request &amp; Response" class="dd-item ">
+      <li data-nav-id="/coding/tu-unit-test/jest/mock-express-req-res/" title="Mock Express Request &amp; Response" class="dd-item active">
         <a href="../../../../coding/tu-unit-test/jest/mock-express-req-res/">
         Mock Express Request &amp; Response
         
@@ -709,7 +709,7 @@
   
     
     <li data-nav-id="/web/" title="Web" class="dd-item
-        parent
+        
         
         
         ">
@@ -837,7 +837,7 @@
   
     
     <li data-nav-id="/web/static-site-generators/" title="Static Site Generators" class="dd-item
-        parent
+        
         
         
         ">
@@ -866,7 +866,7 @@
   
     
     <li data-nav-id="/web/static-site-generators/hugo/" title="Hugo" class="dd-item
-        parent
+        
         
         
         ">
@@ -894,7 +894,7 @@
  
   
     
-      <li data-nav-id="/web/static-site-generators/hugo/commands/" title="Commands" class="dd-item active">
+      <li data-nav-id="/web/static-site-generators/hugo/commands/" title="Commands" class="dd-item ">
         <a href="../../../../web/static-site-generators/hugo/commands/">
         Commands
         
@@ -1146,7 +1146,7 @@
             
           
           
-            <a href='../../../../'>Home</a> > <a href='../../../../web/'>Web</a> > <a href='../../../../web/static-site-generators/'>Static Site Generators</a> > <a href='../../../../web/static-site-generators/hugo/'>Hugo</a> > Commands
+            <a href='../../../../'>Home</a> > <a href='../../../../coding/'>Coding</a> > <a href='../../../../coding/tu-unit-test/'>TU (Unit Test)</a> > <a href='../../../../coding/tu-unit-test/jest/'>Jest</a> > Mock Express Request & Response
           
         
           
@@ -1165,10 +1165,8 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#create-site-">Create site :</a></li>
-    <li><a href="#install-a-theme-">Install a theme :</a></li>
-    <li><a href="#create-first-post-">Create first post :</a></li>
-    <li><a href="#deploy">Deploy</a></li>
+    <li><a href="#mock-functions-helperjs">Mock functions <code>helper.js</code>:</a></li>
+    <li><a href="#use-in-test-">Use in test :</a></li>
   </ul>
 </nav>
     </div>
@@ -1186,57 +1184,54 @@
           
             <h1>
               
-              Commands
+              Mock Express Request &amp; Response
             </h1>
           
 
         
 
 
-<h2 id="create-site-">Create site :</h2>
-<ul>
-<li>
-<p>Create <strong>site</strong> &ldquo;documentation&rdquo;:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new site documentation
-</code></pre></div></li>
-<li>
-<p>Launch <strong>server</strong> (with autoreload) :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo server
-</code></pre></div></li>
-</ul>
-<p>http://localhost:1313</p>
-<h2 id="install-a-theme-">Install a theme :</h2>
-<ul>
-<li>
-<p>Install <strong>theme</strong> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd /themes
-git clone https://github.com/matcornic/hugo-theme-learn.git
-</code></pre></div></li>
-<li>
-<p>Activate new theme in <code>config.toml</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-theme-learn&#34;</span>
-</code></pre></div></li>
-</ul>
-<h2 id="create-first-post-">Create first post :</h2>
-<ul>
-<li>
-<p>Create chapter <strong>(contains post)</strong> <code>static-website-generators</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd ..
-hugo new --kind chapter static-website-generators/_index.md
-</code></pre></div></li>
-<li>
-<p>Create post <code>hugo</code> in chapter <code>static-website-generators</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new static-website-generators/hugo.md
-</code></pre></div></li>
-</ul>
-<h2 id="deploy">Deploy</h2>
-<ul>
-<li>Build :
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo
-</code></pre></div></li>
-</ul>
-<p>Build result in <code>/public</code></p>
+<h2 id="mock-functions-helperjs">Mock functions <code>helper.js</code>:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mockServerResponse</span> <span style="color:#f92672">=</span> () =&gt; {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> {};
+    <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> {
+        <span style="color:#a6e22e">message</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;All good&#39;</span>
+    }
+    <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">status</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>;
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>;
+};
 
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mockExpressRes</span> <span style="color:#f92672">=</span> () =&gt; {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> {};
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jest</span>.<span style="color:#a6e22e">fn</span>().<span style="color:#a6e22e">mockReturnValue</span>(<span style="color:#a6e22e">res</span>)
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jest</span>.<span style="color:#a6e22e">fn</span>().<span style="color:#a6e22e">mockReturnValue</span>(<span style="color:#a6e22e">res</span>)
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jest</span>.<span style="color:#a6e22e">fn</span>().<span style="color:#a6e22e">mockReturnValue</span>(<span style="color:#a6e22e">res</span>)
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">sendStatus</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jest</span>.<span style="color:#a6e22e">fn</span>().<span style="color:#a6e22e">mockReturnValue</span>(<span style="color:#a6e22e">res</span>)
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">res</span>
+};
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">mockServerResponse</span>,
+    <span style="color:#a6e22e">mockExpressRes</span>,
+};
+</code></pre></div><h2 id="use-in-test-">Use in test :</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">network</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../../../../src/server/utils/network&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">helper</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../../../Helper/back/helper&#39;</span>;
+
+<span style="color:#a6e22e">describe</span>(<span style="color:#e6db74">&#39;passePlat&#39;</span>, () =&gt; {
+    <span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#39;passePlat : status 200 + body response&#39;</span>, () =&gt; {
+        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">helper</span>.<span style="color:#a6e22e">mockServerResponse</span>();
+        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">helper</span>.<span style="color:#a6e22e">mockExpressRes</span>();
+
+        <span style="color:#a6e22e">network</span>.<span style="color:#a6e22e">passePlat</span>(<span style="color:#a6e22e">response</span>, <span style="color:#a6e22e">res</span>);
+
+        <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>).<span style="color:#a6e22e">toHaveBeenCalledWith</span>(<span style="color:#ae81ff">200</span>);
+        <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>).<span style="color:#a6e22e">toHaveBeenCalledWith</span>({<span style="color:#e6db74">&#34;message&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;All good&#34;</span>});
+        <span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">sendStatus</span>).<span style="color:#a6e22e">not</span>.<span style="color:#a6e22e">toHaveBeenCalled</span>();
+    });
+});
+
+</code></pre></div>
 
 <footer class="footline">
 	
@@ -1273,6 +1268,22 @@ hugo new --kind chapter static-website-generators/_index.md
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -1296,39 +1307,8 @@ hugo new --kind chapter static-website-generators/_index.md
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1426,9 +1406,6 @@ hugo new --kind chapter static-website-generators/_index.md
             
         
                     
-            
-        
-                    
                         
             
             
@@ -1464,153 +1441,8 @@ hugo new --kind chapter static-website-generators/_index.md
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
                     
                         
             
@@ -1660,9 +1492,6 @@ hugo new --kind chapter static-website-generators/_index.md
             
         
                     
-            
-        
-                    
                         
             
             
@@ -1684,8 +1513,6 @@ hugo new --kind chapter static-website-generators/_index.md
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1700,40 +1527,8 @@ hugo new --kind chapter static-website-generators/_index.md
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1757,7 +1552,33 @@ hugo new --kind chapter static-website-generators/_index.md
 
                     
                     
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
                     
                     
 
@@ -1767,6 +1588,24 @@ hugo new --kind chapter static-website-generators/_index.md
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1782,7 +1621,6 @@ hugo new --kind chapter static-website-generators/_index.md
             
             
                 
-                    
                     
                 
                 
@@ -1800,8 +1638,165 @@ hugo new --kind chapter static-website-generators/_index.md
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1914,10 +1909,10 @@ hugo new --kind chapter static-website-generators/_index.md
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../../../web/static-site-generators/hugo/" title="Hugo"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../../../coding/tu-unit-test/jest/errors/" title="Jest (Unit test)"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../../../web/static-site-generators/hugo/settings/" title="Settings" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../../../learning/" title="Learning" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
