@@ -207,7 +207,7 @@
 	"title": "MongoDB",
 	"tags": [],
 	"description": "",
-	"content": "Execute script file in mongo shell\nmongo localhost:27017/acommeassure aca_parametrage.js Array not empty :\ndb.getCollection('acaDocument').find({ 'associations.contrats': { $exists: true, $not: {$size: 0} } }) Date \u0026gt; :\n'historiqueDocument.creation.date': {\u0026quot;$gte\u0026quot;:new Date(\u0026quot;2020-01-01\u0026quot;)} "
+	"content": "Last document\ndb.getCollection('mycollection').find().sort({$natural:1}); Execute script file in mongo shell\nmongo localhost:27017/mydatabase parametrage.js Array not empty :\ndb.getCollection('mycollection').find({ 'associations.contrats': { $exists: true, $not: {$size: 0} } }) Date \u0026gt; :\n'historiqueDocument.creation.date': {\u0026quot;$gte\u0026quot;:new Date(\u0026quot;2020-01-01\u0026quot;)} "
 },
 {
 	"uri": "http://example.org/coding/nock/",

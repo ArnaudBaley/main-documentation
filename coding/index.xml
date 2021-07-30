@@ -13,9 +13,10 @@
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
       
       <guid>http://example.org/coding/mongodb/</guid>
-      <description>Execute script file in mongo shell
-mongo localhost:27017/acommeassure aca_parametrage.js Array not empty :
-db.getCollection(&#39;acaDocument&#39;).find({ &#39;associations.contrats&#39;: { $exists: true, $not: {$size: 0} } }) Date &amp;gt; :
+      <description>Last document
+db.getCollection(&#39;mycollection&#39;).find().sort({$natural:1}); Execute script file in mongo shell
+mongo localhost:27017/mydatabase parametrage.js Array not empty :
+db.getCollection(&#39;mycollection&#39;).find({ &#39;associations.contrats&#39;: { $exists: true, $not: {$size: 0} } }) Date &amp;gt; :
 &#39;historiqueDocument.creation.date&#39;: {&amp;quot;$gte&amp;quot;:new Date(&amp;quot;2020-01-01&amp;quot;)} </description>
     </item>
     
