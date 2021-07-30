@@ -4,10 +4,10 @@ date: 2021-05-18T15:55:39+02:00
 draft: false
 ---
 
-**Last document**
+**Sort by date**
 
 ```
-db.getCollection('mycollection').find().sort({$natural:1});
+db.getCollection('mycollection').find().sort({$natural:-1});
 ```
 
 **Execute script file in mongo shell**
