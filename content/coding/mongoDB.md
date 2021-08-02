@@ -4,6 +4,14 @@ date: 2021-05-18T15:55:39+02:00
 draft: false
 ---
 
+**Projection**
+
+```
+db.getCollection('myCollection').find({
+    id: ObjectId("60c75a631e130a5b9dfc00a0")
+    },{ 'myNode.field': 1 })
+```
+
 **Sort by date**
 
 ```
