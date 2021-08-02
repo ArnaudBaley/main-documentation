@@ -200,7 +200,8 @@ name: CI on: push jobs: deploy: runs-on: ubuntu-18.04 steps: - name: Git checkou
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
       
       <guid>http://example.org/coding/mongodb/</guid>
-      <description>Sort by date
+      <description>Projection
+db.getCollection(&#39;myCollection&#39;).find({ id: ObjectId(&amp;quot;60c75a631e130a5b9dfc00a0&amp;quot;) },{ &#39;myNode.field&#39;: 1 }) Sort by date
 db.getCollection(&#39;mycollection&#39;).find().sort({$natural:-1}); Execute script file in mongo shell
 mongo localhost:27017/mydatabase parametrage.js Array not empty :
 db.getCollection(&#39;mycollection&#39;).find({ &#39;associations.contrats&#39;: { $exists: true, $not: {$size: 0} } }) Date &amp;gt; :
