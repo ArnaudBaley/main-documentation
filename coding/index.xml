@@ -32,15 +32,5 @@ const nock = require(&amp;#34;nock&amp;#34;); nock(&amp;#34;http://api.service:8
 const mockResponse = () =&amp;gt; { const res = {}; res.status = jest.fn().mockReturnValue(res); res.json = jest.fn().mockReturnValue(res); res.send = jest.fn().mockReturnValue(res); return res; }; const res = mockResponse(); const test = await creation.sendMailDocuments(sendMailBody, res); // utiliser .</description>
     </item>
     
-    <item>
-      <title>NodeJs</title>
-      <link>http://example.org/coding/nodejs/</link>
-      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
-      
-      <guid>http://example.org/coding/nodejs/</guid>
-      <description>Transform callback TO Promise -&amp;gt; util.promisify
-const util = require(&amp;#39;util&amp;#39;); ..... const promisified = util.promisify(envoyerMailTemplateDynamique); await promisified(codeMarqueBlanche, extraParams, to, template); </description>
-    </item>
-    
   </channel>
 </rss>

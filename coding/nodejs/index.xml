@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NodeJs on My New Hugo Site</title>
+    <link>http://example.org/coding/nodejs/</link>
+    <description>Recent content in NodeJs on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 May 2021 15:55:39 +0200</lastBuildDate><atom:link href="http://example.org/coding/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buffer / Streams</title>
+      <link>http://example.org/coding/nodejs/streams/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/nodejs/streams/</guid>
+      <description>Stream Size unknown (multiple paquet called &amp;ldquo;chunk&amp;rdquo;) asynchronous    Buffer Size known synchronous     A stream uses buffer to store chunks.
+Get remote file (superagent) + send it without disk persistense : async function downloadDocument(url, req, res) { let filename = req.params.idversiondocument; try { const result = await request.get(path.join(url, &amp;#34;/api/ged/&amp;#34; + req.params.idDocument + &amp;#34;/file&amp;#34;)) .</description>
+    </item>
+    
+  </channel>
+</rss>

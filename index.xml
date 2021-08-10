@@ -102,6 +102,16 @@ window.onload = () =&amp;gt; { &amp;#39;use strict&amp;#39;; if (&amp;#39;servic
     </item>
     
     <item>
+      <title>Buffer / Streams</title>
+      <link>http://example.org/coding/nodejs/streams/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/nodejs/streams/</guid>
+      <description>Stream Size unknown (multiple paquet called &amp;ldquo;chunk&amp;rdquo;) asynchronous    Buffer Size known synchronous     A stream uses buffer to store chunks.
+Get remote file (superagent) + send it without disk persistense : async function downloadDocument(url, req, res) { let filename = req.params.idversiondocument; try { const result = await request.get(path.join(url, &amp;#34;/api/ged/&amp;#34; + req.params.idDocument + &amp;#34;/file&amp;#34;)) .</description>
+    </item>
+    
+    <item>
       <title>Class</title>
       <link>http://example.org/coding/languages/javascript/class/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
@@ -217,16 +227,6 @@ db.getCollection(&#39;mycollection&#39;).find({ &#39;associations.contrats&#39;:
       <description>Mock API call :
 const nock = require(&amp;#34;nock&amp;#34;); nock(&amp;#34;http://api.service:8080&amp;#34;) .defaultReplyHeaders({ &amp;#39;access-control-allow-origin&amp;#39;: &amp;#39;*&amp;#39;, &amp;#39;access-control-allow-credentials&amp;#39;: &amp;#39;true&amp;#39; }) .get(&amp;#34;/api/contrat/signature/matching&amp;#34;) .reply(200, { license: { key: &amp;#34;mit&amp;#34;, name: &amp;#34;MIT License&amp;#34;, spdx_id: &amp;#34;MIT&amp;#34;, url: &amp;#34;https://api.github.com/licenses/mit&amp;#34;, node_id: &amp;#34;MDc6TGljZW5zZTEz&amp;#34;, }, }); Mock Express middleware (Response) :
 const mockResponse = () =&amp;gt; { const res = {}; res.status = jest.fn().mockReturnValue(res); res.json = jest.fn().mockReturnValue(res); res.send = jest.fn().mockReturnValue(res); return res; }; const res = mockResponse(); const test = await creation.sendMailDocuments(sendMailBody, res); // utiliser .</description>
-    </item>
-    
-    <item>
-      <title>NodeJs</title>
-      <link>http://example.org/coding/nodejs/</link>
-      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
-      
-      <guid>http://example.org/coding/nodejs/</guid>
-      <description>Transform callback TO Promise -&amp;gt; util.promisify
-const util = require(&amp;#39;util&amp;#39;); ..... const promisified = util.promisify(envoyerMailTemplateDynamique); await promisified(codeMarqueBlanche, extraParams, to, template); </description>
     </item>
     
     <item>

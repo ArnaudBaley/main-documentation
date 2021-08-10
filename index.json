@@ -84,6 +84,13 @@
 	"content": "Extract part of an array or a string (new array) -\u0026gt; slice() const array = \u0026#39;hello world\u0026#39;; const result = array.slice(0,5); console.log(result); // hello Remove part of an array (replace array) -\u0026gt; splice() const array = [\u0026#39;h\u0026#39;,\u0026#39;e\u0026#39;,\u0026#39;l\u0026#39;,\u0026#39;l\u0026#39;,\u0026#39;o\u0026#39;]; const result = array.splice(0, 3); console.log(result); // hel "
 },
 {
+	"uri": "http://example.org/coding/nodejs/streams/",
+	"title": "Buffer / Streams",
+	"tags": [],
+	"description": "",
+	"content": "           Stream Size unknown (multiple paquet called \u0026ldquo;chunk\u0026rdquo;) asynchronous    Buffer Size known synchronous     A stream uses buffer to store chunks.\nGet remote file (superagent) + send it without disk persistense : async function downloadDocument(url, req, res) { let filename = req.params.idversiondocument; try { const result = await request.get(path.join(url, \u0026#34;/api/ged/\u0026#34; + req.params.idDocument + \u0026#34;/file\u0026#34;)) .auth(req.token, { type: \u0026#39;bearer\u0026#39; }) .responseType(\u0026#39;blob\u0026#39;); // get response as buffer (synchronous).  res.status(result.status); res.write(result.body, \u0026#39;binary\u0026#39;); // response = buffer as binary.  return res.end(); } catch (error) { logger.error(JSON.stringify(error)); return res.status(error.status).send(error.message); } }; "
+},
+{
 	"uri": "http://example.org/coding/languages/javascript/class/",
 	"title": "Class",
 	"tags": [],
