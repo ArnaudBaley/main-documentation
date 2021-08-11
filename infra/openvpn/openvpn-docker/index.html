@@ -12,22 +12,22 @@
     <title>OpenVpn Docker :: My New Hugo Site</title>
 
     
-    <link href="../../../css/nucleus.css?1628703645" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1628703645" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1628703645" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1628703645" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1628703645" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1628703645" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1628703645" rel="stylesheet">
-    <link href="../../../css/theme.css?1628703645" rel="stylesheet">
-    <link href="../../../css/tabs.css?1628703645" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1628703645" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1628703886" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1628703886" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1628703886" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1628703886" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1628703886" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1628703886" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1628703886" rel="stylesheet">
+    <link href="../../../css/theme.css?1628703886" rel="stylesheet">
+    <link href="../../../css/tabs.css?1628703886" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1628703886" rel="stylesheet">
     
-    <link href="../../../css/theme-blue.css?1628703645" rel="stylesheet">
+    <link href="../../../css/theme-blue.css?1628703886" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1628703645"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1628703886"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1628703645"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1628703645"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1628703886"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1628703886"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/example.org\/";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1628703645"></script>
+<script type="text/javascript" src="../../../js/search.js?1628703886"></script>
 
     
   </div>
@@ -1372,11 +1372,9 @@ sudo nano docker-compose.yml
 <p>a - Normal case</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo su
 docker run -v /srv/openvpn/data:/etc/openvpn --rm custom-openvpn ovpn_getclient CLIENT_NAME &gt; CLIENT_NAME.ovpn
-</code></pre></div><p>b- IF OTP (2FA Google Authenticator)</p>
+</code></pre></div><p>b- IF OTP (2FA Google Authenticator) <a href="https://github.com/kylemanna/docker-openvpn/blob/master/docs/otp.md#using-two-factor-authentication-for-users">SOURCE</a></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -v /var/openvpn/data:/etc/openvpn --rm -t custom-openvpn ovpn_otp_user CLIENT_NAME
-</code></pre></div><p>SOURCE = <a href="https://onedrive.live.com/view.aspx?resid=370C0D11629DF1CF%21208&amp;id=documents&amp;wd=target%28PROGRAMMATION%2FDocker.one%7C64E1FBF1-DB71-43A3-93F5-1A85D2DB7B14%2FVPN%7CA8F1BE9E-7B69-4E04-A043-AA240A59A37C%2F%29">https://onedrive.live.com/view.aspx?resid=370C0D11629DF1CF%21208&amp;id=documents&amp;wd=target%28PROGRAMMATION%2FDocker.one%7C64E1FBF1-DB71-43A3-93F5-1A85D2DB7B14%2FVPN%7CA8F1BE9E-7B69-4E04-A043-AA240A59A37C%2F%29</a>
-onenote:https://d.docs.live.net/370c0d11629df1cf/Documents/BLOC_NOTE_PERSONNEL/PROGRAMMATION/Docker.one#VPN&amp;section-id={64E1FBF1-DB71-43A3-93F5-1A85D2DB7B14}&amp;page-id={A8F1BE9E-7B69-4E04-A043-AA240A59A37C}&amp;object-id={2B7FA068-6E96-4706-83D2-5BAAAED0A673}&amp;25</p>
-<h4 id="get-file-with-winscp">Get file with WinSCP</h4>
+</code></pre></div><h4 id="get-file-with-winscp">Get file with WinSCP</h4>
 
 
 <footer class="footline">
@@ -2130,19 +2128,19 @@ onenote:https://d.docs.live.net/370c0d11629df1cf/Documents/BLOC_NOTE_PERSONNEL/P
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1628703645"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1628703645"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1628703645"></script>
-    <script src="../../../js/jquery.sticky.js?1628703645"></script>
-    <script src="../../../js/featherlight.min.js?1628703645"></script>
-    <script src="../../../js/highlight.pack.js?1628703645"></script>
+    <script src="../../../js/clipboard.min.js?1628703886"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1628703886"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1628703886"></script>
+    <script src="../../../js/jquery.sticky.js?1628703886"></script>
+    <script src="../../../js/featherlight.min.js?1628703886"></script>
+    <script src="../../../js/highlight.pack.js?1628703886"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1628703645"></script>
-    <script src="../../../js/learn.js?1628703645"></script>
-    <script src="../../../js/hugo-learn.js?1628703645"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1628703886"></script>
+    <script src="../../../js/learn.js?1628703886"></script>
+    <script src="../../../js/hugo-learn.js?1628703886"></script>
     
         
-            <script src="../../../mermaid/mermaid.js?1628703645"></script>
+            <script src="../../../mermaid/mermaid.js?1628703886"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
