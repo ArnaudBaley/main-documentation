@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenVpn on My New Hugo Site</title>
+    <link>http://example.org/infra/openvpn/</link>
+    <description>Recent content in OpenVpn on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 May 2021 15:55:39 +0200</lastBuildDate><atom:link href="http://example.org/infra/openvpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenVpn Docker</title>
+      <link>http://example.org/infra/openvpn/openvpn-docker/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/infra/openvpn/openvpn-docker/</guid>
+      <description>Image github
+Tutorial
+Requirement   Open UDP port 1194
+  Install :
+ docker docker compose git    Process Create folder openvpn : cd /srv sudo mkdir openvpn cd openvpn Build image (fork of kylemanna/docker-openvpn) : git clone https://github.com/ArnaudBaley/fork-docker-openvpn.git cd fork-docker-openvpn docker build -t custom-openvpn . Create folder openvpn/data : cd ../../ sudo mkdir openvpn/data Create configurations (fill your value for MY_IP_OR_MY_DOMAIN) : (-c allow clients to communicate between them)</description>
+    </item>
+    
+  </channel>
+</rss>

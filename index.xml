@@ -239,6 +239,19 @@ const mockResponse = () =&amp;gt; { const res = {}; res.status = jest.fn().mockR
     </item>
     
     <item>
+      <title>OpenVpn Docker</title>
+      <link>http://example.org/infra/openvpn/openvpn-docker/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/infra/openvpn/openvpn-docker/</guid>
+      <description>Image github
+Tutorial
+Requirement   Open UDP port 1194
+  Install :
+ docker docker compose git    Process Create folder openvpn : cd /srv sudo mkdir openvpn cd openvpn Build image (fork of kylemanna/docker-openvpn) : git clone https://github.com/ArnaudBaley/fork-docker-openvpn.git cd fork-docker-openvpn docker build -t custom-openvpn . Create folder openvpn/data : cd ../../ sudo mkdir openvpn/data Create configurations (fill your value for MY_IP_OR_MY_DOMAIN) : (-c allow clients to communicate between them)</description>
+    </item>
+    
+    <item>
       <title>public API</title>
       <link>http://example.org/web/public-api/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
