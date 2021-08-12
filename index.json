@@ -147,6 +147,13 @@
 	"content": "Sources Official guide : getting started\nTutorials :\n Comment créer un site avec Hugo partie 1 : intro et configurations   Tricks Activate full search (not only menu items) config.toml :\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] Change order in menu -keyword weight :\n--- title: \u0026quot;Commands\u0026quot; date: 2021-05-18T15:55:39+02:00 draft: false weight: 1 --- "
 },
 {
+	"uri": "http://example.org/infra/",
+	"title": "Infra",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://example.org/coding/languages/javascript/",
 	"title": "JavaScript",
 	"tags": [],
@@ -236,6 +243,20 @@
 	"tags": [],
 	"description": "",
 	"content": "Object is empty : const a = {}; Object.keys(a).length // 0 (not empty returns 1) "
+},
+{
+	"uri": "http://example.org/infra/openvpn/",
+	"title": "OpenVpn",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/infra/openvpn/openvpn-docker/",
+	"title": "OpenVpn Docker",
+	"tags": [],
+	"description": "",
+	"content": "Image github\nTutorial\nRequirement   Open UDP port 1194\n  Install :\n docker docker compose git    Process Create folder openvpn : cd /srv sudo mkdir openvpn cd openvpn Build image (fork of kylemanna/docker-openvpn) : git clone https://github.com/ArnaudBaley/fork-docker-openvpn.git cd fork-docker-openvpn docker build -t custom-openvpn . Create folder openvpn/data : cd ../../ sudo mkdir openvpn/data Create configurations (fill your value for MY_IP_OR_MY_DOMAIN) : (-c allow clients to communicate between them)\nsudo docker run -v /srv/openvpn/data:/etc/openvpn --rm custom-openvpn ovpn_genconfig -c -u udp://MY_IP_OR_MY_DOMAIN Launch script ovpn_initpki : sudo docker run -v /srv/openvpn/data:/etc/openvpn --rm -it custom-openvpn ovpn_initpki Create file docker-compose.yml : cd /srv/openvpn/ sudo nano docker-compose.yml docker-compose.yml :\napp: image: \u0026#39;custom-openvpn\u0026#39; volumes: - \u0026#39;./data:/etc/openvpn\u0026#39; ports: - \u0026#34;1194:1194/udp\u0026#34; cap_add: - NET_ADMIN restart: always Start OpenVPN server : sudo docker-compose up -d Generate a client certificate without a passphrase (fill your value for CLIENT_NAME) : sudo docker run -v /srv/openvpn/data:/etc/openvpn --rm -it custom-openvpn easyrsa build-client-full CLIENT_NAME nopass Retrieve the client configuration with embedded certificates (fill your value for CLIENT_NAME) : a - Normal case\nsudo su docker run -v /srv/openvpn/data:/etc/openvpn --rm custom-openvpn ovpn_getclient CLIENT_NAME \u0026gt; CLIENT_NAME.ovpn b- IF OTP (2FA Google Authenticator) SOURCE\ndocker run -v /var/openvpn/data:/etc/openvpn --rm -t custom-openvpn ovpn_otp_user CLIENT_NAME Get file with WinSCP "
 },
 {
 	"uri": "http://example.org/web/public-api/",
