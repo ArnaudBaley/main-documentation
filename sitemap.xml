@@ -35,6 +35,9 @@
     <loc>http://example.org/</loc>
     <lastmod>2021-05-18T15:54:59+02:00</lastmod>
   </url><url>
+    <loc>http://example.org/coding/languages/css/flexbox/alignment/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
     <loc>http://example.org/coding/languages/javascript/array/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
@@ -47,6 +50,12 @@
     <loc>http://example.org/coding/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
+    <loc>http://example.org/coding/languages/css/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/coding/languages/css/flexbox/demo/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
     <loc>http://example.org/coding/languages/javascript/design-patterns/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
@@ -54,6 +63,9 @@
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
     <loc>http://example.org/coding/tu-unit-test/jest/errors/</loc>
+    <lastmod>2021-05-18T15:55:39+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/coding/languages/css/flexbox/</loc>
     <lastmod>2021-05-18T15:55:39+02:00</lastmod>
   </url><url>
     <loc>http://example.org/tools/git/</loc>

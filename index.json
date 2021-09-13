@@ -77,6 +77,13 @@
 	"content": "IT Documentation Arnaud BALEY "
 },
 {
+	"uri": "http://example.org/coding/languages/css/flexbox/alignment/",
+	"title": "Alignment",
+	"tags": [],
+	"description": "",
+	"content": "Alignment : Align main axis -\u0026gt; justify-content :\n flex-start (align with beginning) flex-end center space-between (elements are stretch on axis) space-around (same that space-between but with space on edges) stretch (by default)  Align horizontally \u0026amp; vertically :\n.wrapper { display: flex; } .element { margin: auto; } Align cross axis -\u0026gt; align-items :\n stretch flex-start flex-end center baseline  Align lines -\u0026gt; align-content\n flex-start flex-end center space-between space-around stretch (by default)  "
+},
+{
 	"uri": "http://example.org/coding/languages/javascript/array/",
 	"title": "Array",
 	"tags": [],
@@ -105,6 +112,20 @@
 	"content": ""
 },
 {
+	"uri": "http://example.org/coding/languages/css/",
+	"title": "CSS",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/coding/languages/css/flexbox/demo/",
+	"title": "Demo",
+	"tags": [],
+	"description": "",
+	"content": "HTML : \u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html\u0026gt; \u0026lt;head\u0026gt; \u0026lt;meta charset=\u0026#34;utf-8\u0026#34;\u0026gt; \u0026lt;title\u0026gt;Demo\u0026lt;/title\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;div class=\u0026#34;wrapper basic\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;element a\u0026#34;\u0026gt;Element 1\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element b\u0026#34;\u0026gt;Element 2\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element c\u0026#34;\u0026gt;Element 3\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element d\u0026#34;\u0026gt;Element 4\u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;br\u0026gt; \u0026lt;div class=\u0026#34;wrapper justify-content\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;element a\u0026#34;\u0026gt;Element 1\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element b\u0026#34;\u0026gt;Element 2\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element c\u0026#34;\u0026gt;Element 3\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element d\u0026#34;\u0026gt;Element 4\u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;br\u0026gt; \u0026lt;div class=\u0026#34;wrapper full-centered\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;element a\u0026#34;\u0026gt;Element 1\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element b\u0026#34;\u0026gt;Element 2\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element c\u0026#34;\u0026gt;Element 3\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element d\u0026#34;\u0026gt;Element 4\u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;br\u0026gt; \u0026lt;div class=\u0026#34;wrapper align-lines\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;element a\u0026#34;\u0026gt;Element 1\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element b\u0026#34;\u0026gt;Element 2\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element c\u0026#34;\u0026gt;Element 3\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element d\u0026#34;\u0026gt;Element 4\u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; CSS : .wrapper { display:flex; } .basic { flex-direction: row; flex-wrap: wrap; /* Line break */ } .justify-content { flex-direction: row; justify-content: space-around; } .full-centered { height: 100px; background-color: grey; flex-direction: row; justify-content: center; align-items: center; } .wrapper.align-lines { height: 75px; flex-wrap: wrap; background-color: grey; flex-direction: row; align-content: flex-end; } .wrapper.align-lines .element { width: 500px; } .wrapper.full-centered .element { margin:auto; } .wrapper.basic .element { width: 500px; } .element.a { background-color: yellow; } .element.b { background-color: blue; } .element.c { background-color: green; } .element.d { background-color: red; } "
+},
+{
 	"uri": "http://example.org/coding/languages/javascript/design-patterns/",
 	"title": "Design Patterns",
 	"tags": [],
@@ -124,6 +145,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Expect to throw error : synchronous :\nexpect(() =\u0026gt; list.clickButton()).toThrow(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;); asynchronous :\nexpect(list.clickButton()).rejects.toEqual(new Error(\u0026#39;incorrect param \u0026#34;action\u0026#34;\u0026#39;)); "
+},
+{
+	"uri": "http://example.org/coding/languages/css/flexbox/",
+	"title": "Flexbox",
+	"tags": [],
+	"description": "",
+	"content": "SOURCE\nDemo jsfiddle\nGeneral : -Flex container (wrapper) -Flex items (element inside wrapper) 2 axis :\n-main axis (set by flex-direction)\n-cross axis\n-alignement main axis = justify-content\n-alignement cross axis = align-items\nflex-direction :\n row column row-reverse column-reverse  \u0026lt;div class=\u0026#34;wrapper\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;element\u0026#34;\u0026gt;Element 1\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element\u0026#34;\u0026gt;Element 2\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element\u0026#34;\u0026gt;Element 3\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;element\u0026#34;\u0026gt;Element 4\u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; .wrapper { display:flex; flex-direction: row; flex-wrap: wrap; /* Line break */ } Order elements -\u0026gt; order :\n.element.a { order: 1; } Resize -\u0026gt; flex :\n.element.a { flex: 2; } .element.b { flex: 1; } "
 },
 {
 	"uri": "http://example.org/tools/git/",
@@ -207,7 +235,7 @@
 	"title": "Markdown",
 	"tags": [],
 	"description": "",
-	"content": "Table With header     Gatsby Hugo Jekyll     Learning curve higher lesser    Language JavaScript Go Ruby    | | Gatsby | Hugo | Jekyll | ----------- |----------- | ----------- | ----------- | | Learning curve | higher | lesser | | Language | JavaScript | Go | Ruby "
+	"content": "Line break = 2 space at the end of line.\nimage\n![name](/path.png) Table With header     Gatsby Hugo Jekyll     Learning curve higher lesser    Language JavaScript Go Ruby    | | Gatsby | Hugo | Jekyll | ----------- |----------- | ----------- | ----------- | | Learning curve | higher | lesser | | Language | JavaScript | Go | Ruby "
 },
 {
 	"uri": "http://example.org/coding/tu-unit-test/jest/mock-express-req-res/",

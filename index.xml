@@ -93,6 +93,19 @@ window.onload = () =&amp;gt; { &amp;#39;use strict&amp;#39;; if (&amp;#39;servic
     </item>
     
     <item>
+      <title>Alignment</title>
+      <link>http://example.org/coding/languages/css/flexbox/alignment/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/css/flexbox/alignment/</guid>
+      <description>Alignment : Align main axis -&amp;gt; justify-content :
+ flex-start (align with beginning) flex-end center space-between (elements are stretch on axis) space-around (same that space-between but with space on edges) stretch (by default)  Align horizontally &amp;amp; vertically :
+.wrapper { display: flex; } .element { margin: auto; } Align cross axis -&amp;gt; align-items :
+ stretch flex-start flex-end center baseline  Align lines -&amp;gt; align-content
+ flex-start flex-end center space-between space-around stretch (by default)  </description>
+    </item>
+    
+    <item>
       <title>Array</title>
       <link>http://example.org/coding/languages/javascript/array/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
@@ -118,6 +131,15 @@ Get remote file (superagent) + send it without disk persistense : async function
       
       <guid>http://example.org/coding/languages/javascript/class/</guid>
       <description>TODO </description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>http://example.org/coding/languages/css/flexbox/demo/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/css/flexbox/demo/</guid>
+      <description>HTML : &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Demo&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;wrapper basic&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;element a&amp;#34;&amp;gt;Element 1&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element b&amp;#34;&amp;gt;Element 2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element c&amp;#34;&amp;gt;Element 3&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element d&amp;#34;&amp;gt;Element 4&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div class=&amp;#34;wrapper justify-content&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;element a&amp;#34;&amp;gt;Element 1&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element b&amp;#34;&amp;gt;Element 2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element c&amp;#34;&amp;gt;Element 3&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element d&amp;#34;&amp;gt;Element 4&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div class=&amp;#34;wrapper full-centered&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;element a&amp;#34;&amp;gt;Element 1&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element b&amp;#34;&amp;gt;Element 2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element c&amp;#34;&amp;gt;Element 3&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element d&amp;#34;&amp;gt;Element 4&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div class=&amp;#34;wrapper align-lines&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;element a&amp;#34;&amp;gt;Element 1&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element b&amp;#34;&amp;gt;Element 2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element c&amp;#34;&amp;gt;Element 3&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;element d&amp;#34;&amp;gt;Element 4&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; CSS : .</description>
     </item>
     
     <item>
