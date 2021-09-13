@@ -82,7 +82,7 @@ draft: false
   height: 75px;
   flex-wrap: wrap;
   background-color: grey;
-  flex-direction: row;
+  flex-direction: column;
   align-content: flex-end;
 }
 

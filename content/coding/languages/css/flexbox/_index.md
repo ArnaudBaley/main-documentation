@@ -6,8 +6,6 @@ draft: false
 
 [SOURCE](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/3298561-faites-votre-mise-en-page-avec-flexbox)  
 
-[Demo jsfiddle](https://jsfiddle.net/890vc3wn/)
-
 #### General :
 
 ```
