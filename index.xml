@@ -23,6 +23,35 @@ cd .. hugo new --kind chapter static-website-generators/_index.md   Create post 
     </item>
     
     <item>
+      <title>Syntax</title>
+      <link>http://example.org/coding/languages/typescript/syntax/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/typescript/syntax/</guid>
+      <description>void = function don&amp;rsquo;t return value.
+any = function return something (not recommended).
+optional parameter = ?
+function objectParam(num: number, b?: string): boolean { return num % 2 === 0 } dual parameter + cast
+function dualParam(num: number | string): boolean { if (typeof num !== &amp;#39;number&amp;#39;) { num = parseInt(num, 10); } return &amp;lt;number&amp;gt;num % 2 === 0 } Enum
+enum UserResponse { No = 0, Yes = 1, } function respond(recipient: string, message: UserResponse): void { // .</description>
+    </item>
+    
+    <item>
+      <title>Class</title>
+      <link>http://example.org/coding/languages/typescript/class/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/languages/typescript/class/</guid>
+      <description>Prerequirement -Activate transpilation in ES5
+General Scope :
+  public
+  private
+  protected
+  static
+  Basic class class Demo { private _element constructor () { } // Getter &amp;amp; setter  set element (value: string) { this._element = value } get element (): string { return this._element } } let d = new Demo() // Getters &amp;amp; setters are automatically called d.element = &amp;#39;Salut&amp;#39; console.</description>
+    </item>
+    
+    <item>
       <title>Settings</title>
       <link>http://example.org/web/static-site-generators/hugo/settings/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>

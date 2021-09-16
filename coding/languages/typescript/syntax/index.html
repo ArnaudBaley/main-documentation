@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../../../images/favicon.png" type="image/png">
 
-    <title>JSdoc :: My New Hugo Site</title>
+    <title>Syntax :: My New Hugo Site</title>
 
     
     <link href="../../../../css/nucleus.css?1631809860" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../../../../coding/languages/javascript/jsdoc/">
+  <body class="" data-url="../../../../coding/languages/typescript/syntax/">
     <nav id="sidebar" class="">
 
 
@@ -288,7 +288,7 @@
   
     
     <li data-nav-id="/coding/languages/javascript/" title="JavaScript" class="dd-item
-        parent
+        
         
         
         ">
@@ -377,7 +377,7 @@
  
   
     
-      <li data-nav-id="/coding/languages/javascript/jsdoc/" title="JSdoc" class="dd-item active">
+      <li data-nav-id="/coding/languages/javascript/jsdoc/" title="JSdoc" class="dd-item ">
         <a href="../../../../coding/languages/javascript/jsdoc/">
         JSdoc
         
@@ -497,7 +497,7 @@
   
     
     <li data-nav-id="/coding/languages/typescript/" title="TypeScript" class="dd-item
-        
+        parent
         
         
         ">
@@ -523,7 +523,7 @@
  
   
     
-      <li data-nav-id="/coding/languages/typescript/syntax/" title="Syntax" class="dd-item ">
+      <li data-nav-id="/coding/languages/typescript/syntax/" title="Syntax" class="dd-item active">
         <a href="../../../../coding/languages/typescript/syntax/">
         Syntax
         
@@ -1495,7 +1495,7 @@
             
           
           
-            <a href='../../../../'>Home</a> > <a href='../../../../coding/'>Coding</a> > <a href='../../../../coding/languages/'>Languages</a> > <a href='../../../../coding/languages/javascript/'>JavaScript</a> > JSdoc
+            <a href='../../../../'>Home</a> > <a href='../../../../coding/'>Coding</a> > <a href='../../../../coding/languages/'>Languages</a> > <a href='../../../../coding/languages/typescript/'>TypeScript</a> > Syntax
           
         
           
@@ -1528,21 +1528,38 @@
           
             <h1>
               
-              JSdoc
+              Syntax
             </h1>
           
 
         
 
 
-<pre tabindex="0"><code>/**
- * Returns x raised to the n-th power.
- *
- * @param {number} x The number to raise.
- * @param {number} n The power, must be a natural number.
- * @return {number} x raised to the n-th power.
- */
-</code></pre>
+<p><strong>void</strong> = function don&rsquo;t return value.<br>
+<strong>any</strong> = function return something (not recommended).</p>
+<p><strong>optional parameter</strong> = ?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">objectParam</span>(<span style="color:#a6e22e">num</span>: <span style="color:#66d9ef">number</span>, <span style="color:#a6e22e">b?</span>: <span style="color:#66d9ef">string</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">boolean</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">num</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>
+}
+</code></pre></div><p><strong>dual parameter + cast</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">dualParam</span>(<span style="color:#a6e22e">num</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">string</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">boolean</span> {
+    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">num</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;number&#39;</span>) {
+        <span style="color:#a6e22e">num</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">num</span>, <span style="color:#ae81ff">10</span>);
+    }
+    <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">number</span>&gt;<span style="color:#a6e22e">num</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>
+}
+</code></pre></div><p><strong>Enum</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">UserResponse</span> {
+  <span style="color:#a6e22e">No</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>,
+  <span style="color:#a6e22e">Yes</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+}
+ 
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">respond</span>(<span style="color:#a6e22e">recipient</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">message</span>: <span style="color:#66d9ef">UserResponse</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+  <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>}
+ 
+<span style="color:#a6e22e">respond</span>(<span style="color:#e6db74">&#34;Princess Caroline&#34;</span>, <span style="color:#a6e22e">UserResponse</span>.<span style="color:#a6e22e">Yes</span>);
+</code></pre></div>
 
 <footer class="footline">
 	
@@ -1696,7 +1713,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1710,8 +1726,21 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -1761,26 +1790,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1848,6 +1857,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1860,6 +1870,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1876,6 +1887,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2416,10 +2430,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../../../coding/languages/javascript/design-patterns/" title="Design Patterns"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../../../coding/languages/typescript/" title="TypeScript"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../../../coding/languages/javascript/loop/" title="Loop" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../../../coding/languages/typescript/class/" title="Class" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

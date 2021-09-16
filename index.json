@@ -7,6 +7,20 @@
 	"content": "Create site :   Create site \u0026ldquo;documentation\u0026rdquo;:\nhugo new site documentation   Launch server (with autoreload) :\nhugo server   http://localhost:1313\nInstall a theme :   Install theme :\ncd /themes git clone https://github.com/matcornic/hugo-theme-learn.git   Activate new theme in config.toml :\ntheme = \u0026#34;hugo-theme-learn\u0026#34;   Create first post :   Create chapter (contains post) static-website-generators\ncd .. hugo new --kind chapter static-website-generators/_index.md   Create post hugo in chapter static-website-generators :\nhugo new static-website-generators/hugo.md   Deploy  Build : hugo   Build result in /public\n"
 },
 {
+	"uri": "http://example.org/coding/languages/typescript/syntax/",
+	"title": "Syntax",
+	"tags": [],
+	"description": "",
+	"content": "void = function don\u0026rsquo;t return value.\nany = function return something (not recommended).\noptional parameter = ?\nfunction objectParam(num: number, b?: string): boolean { return num % 2 === 0 } dual parameter + cast\nfunction dualParam(num: number | string): boolean { if (typeof num !== \u0026#39;number\u0026#39;) { num = parseInt(num, 10); } return \u0026lt;number\u0026gt;num % 2 === 0 } Enum\nenum UserResponse { No = 0, Yes = 1, } function respond(recipient: string, message: UserResponse): void { // ... } respond(\u0026#34;Princess Caroline\u0026#34;, UserResponse.Yes); "
+},
+{
+	"uri": "http://example.org/coding/languages/typescript/class/",
+	"title": "Class",
+	"tags": [],
+	"description": "",
+	"content": "Prerequirement -Activate transpilation in ES5\nGeneral Scope :\n  public\n  private\n  protected\n  static\n  Basic class class Demo { private _element constructor () { } // Getter \u0026amp; setter  set element (value: string) { this._element = value } get element (): string { return this._element } } let d = new Demo() // Getters \u0026amp; setters are automatically called d.element = \u0026#39;Salut\u0026#39; console.log(d.element); Heritage class Animal { move() { console.log(\u0026#34;Moving along!\u0026#34;); } } class Dog extends Animal { woof(times: number) { for (let i = 0; i \u0026lt; times; i++) { console.log(\u0026#34;woof!\u0026#34;); } } } const d = new Dog(); // Base class method d.move(); // Derived class method d.woof(3); Interface Interface for param :\ninterface LabeledValue { label: string; } function printLabel(labeledObj: LabeledValue) { console.log(labeledObj.label); } let myObj = { size: 10, label: \u0026#34;Size 10 Object\u0026#34; }; printLabel(myObj); Interface for class :\ninterface ClockInterface { currentTime: Date; setTime(d: Date): void; } class Clock implements ClockInterface { currentTime: Date = new Date(); setTime(d: Date) { this.currentTime = d; } constructor(h: number, m: number) {} } "
+},
+{
 	"uri": "http://example.org/web/static-site-generators/hugo/settings/",
 	"title": "Settings",
 	"tags": [],
@@ -327,6 +341,13 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "http://example.org/coding/languages/typescript/",
+	"title": "TypeScript",
+	"tags": [],
+	"description": "",
+	"content": "Intro : -Created by Microsoft\n-Code will be transpiled in JavaScript\n-Strongly typed\nDoc :  Official doc  Tuto :  Tuto vidéo Typescript - Grafikart  Setup : npm install -g typescript Check version\ntsc -v Transpile : **ES3 (by default)\ntsc filename.ts **ES5\ntsc filename.ts --target es5 Hot reload : tsc -w --pretty filename.ts --target es5 Configuration file : Create tsconfig.json at project\u0026rsquo;s root.\n{ \u0026#34;compilerOptions\u0026#34;: { \u0026#34;target\u0026#34;: \u0026#34;ES5\u0026#34;, \u0026#34;pretty\u0026#34;: true, \u0026#34;outDir\u0026#34;: \u0026#34;./build\u0026#34; }, \u0026#34;files\u0026#34;: [ \u0026#34;demo.ts\u0026#34;, \u0026#34;class.ts\u0026#34; ], \u0026#34;exclude\u0026#34;: [\u0026#34;node_modules\u0026#34;] } Launch transpiler :\ntsc -w "
 },
 {
 	"uri": "http://example.org/web/",
