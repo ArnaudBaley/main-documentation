@@ -33,8 +33,10 @@ draft: false
 
 ### TDD - Test Driven Development
 
-Sources :
+**Sources :**
 * [Apprendre le TDD - blog.ippon.fr](https://blog.ippon.fr/2020/02/12/apprendre-le-tdd/)
+
+* [Se lancer dans le TDD - putaindecode.io](https://putaindecode.io/articles/se-lancer-dans-le-tdd/)
 
 -Improve code quality, velocity
 
