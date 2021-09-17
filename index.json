@@ -161,7 +161,7 @@
 	"content": "host IP from container\nsudo ip addr show docker0 Shell in container\ndocker exec -it \u0026lt;container name\u0026gt; /bin/bash Extract container id from name :\n$(docker ps -qlf \u0026#34;name=stack-dev_cherm\u0026#34;) Copy file in container\nPrerequisite : create destination folder in container :\nmkdir retourpatrimoine cat /home/arnaudb/Bureau/DATA/PROJETS/BATCH/retourPatrimoine_creerCompteServeurAuth/adherent_lfm_888888_O.csv | docker exec -i $(docker ps -qlf \u0026#34;name=stack-dev_cherm\u0026#34;) /bin/bash -c \u0026#39;cat \u0026gt; /data/retourpatrimoine/adherent_lfm_888888_O.csv\u0026#39; Show full error at service mount :\ndocker service ps --no-trunc mysql "
 },
 {
-	"uri": "http://example.org/coding/tu-unit-test/jest/errors/",
+	"uri": "http://example.org/coding/tests/tu-unit-test/jest/errors/",
 	"title": "Errors",
 	"tags": [],
 	"description": "",
@@ -210,7 +210,7 @@
 	"content": "Links :  JSFiddle (JS online environmnent )  "
 },
 {
-	"uri": "http://example.org/coding/tu-unit-test/jest/",
+	"uri": "http://example.org/coding/tests/tu-unit-test/jest/",
 	"title": "Jest",
 	"tags": [],
 	"description": "",
@@ -259,7 +259,7 @@
 	"content": "Line break = 2 space at the end of line.\nimage\n![name](/path.png) Table With header     Gatsby Hugo Jekyll     Learning curve higher lesser    Language JavaScript Go Ruby    | | Gatsby | Hugo | Jekyll | ----------- |----------- | ----------- | ----------- | | Learning curve | higher | lesser | | Language | JavaScript | Go | Ruby "
 },
 {
-	"uri": "http://example.org/coding/tu-unit-test/jest/mock-express-req-res/",
+	"uri": "http://example.org/coding/tests/tu-unit-test/jest/mock-express-req-res/",
 	"title": "Mock Express Request &amp; Response",
 	"tags": [],
 	"description": "",
@@ -329,6 +329,20 @@
 	"content": "Extract part of an array or a string (new array) -\u0026gt; slice() const array = \u0026#39;hello world\u0026#39;; const result = array.slice(0,5); console.log(result); // hello Split string by separator -\u0026gt; split() const string = \u0026#39;hello,world\u0026#39;; const result = string.split(\u0026#34;,\u0026#34;); console.log(result); // [\u0026#34;hello\u0026#34;, \u0026#34;world\u0026#34;] "
 },
 {
+	"uri": "http://example.org/coding/tests/tdd/",
+	"title": "TDD",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/coding/tests/",
+	"title": "Tests",
+	"tags": [],
+	"description": "",
+	"content": "BDD - Behavior Driven Development SOURCE\n-Collaborate with business to assess the need\n-specify behavior in terms of user stories :\n**As a** store owner, **I want** to add items back to inventory when they are returned or exchanged, **so that** I can track inventory. **Scenario 1**: Items returned for refund should be added to inventory. **Given** that a customer previously bought a black sweater from me **and** I have three black sweaters in inventory, **when** they return the black sweater for a refund, **then** I should have four black sweaters in inventory. **Scenario 2**: Exchanged items should be returned to inventory. **Given** that a customer previously bought a blue garment from me **and** I have two blue garments in inventory **and** three black garments in inventory, **when** they exchange the blue garment for a black garment, **then** I should have three blue garments in inventory **and** two black garments in inventory. TDD - Test Driven Development Sources :\n Apprendre le TDD - blog.ippon.fr  -Improve code quality, velocity\n-3 phases : RED -\u0026gt; GREEN -\u0026gt; Refactor - \u0026gt; \u0026hellip;..\n-short cycle (minutes)\nRED -Think about business need.\n-Write test.\n-Test must not passed.\nRED -Write most direct code to pass the test.\nRefactor -Improve code.\n"
+},
+{
 	"uri": "http://example.org/tools/",
 	"title": "Tools",
 	"tags": [],
@@ -336,7 +350,7 @@
 	"content": ""
 },
 {
-	"uri": "http://example.org/coding/tu-unit-test/",
+	"uri": "http://example.org/coding/tests/tu-unit-test/",
 	"title": "TU (Unit Test)",
 	"tags": [],
 	"description": "",

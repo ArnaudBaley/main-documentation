@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jest on My New Hugo Site</title>
+    <link>http://example.org/coding/tests/tu-unit-test/jest/</link>
+    <description>Recent content in Jest on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 May 2021 15:55:39 +0200</lastBuildDate><atom:link href="http://example.org/coding/tests/tu-unit-test/jest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Errors</title>
+      <link>http://example.org/coding/tests/tu-unit-test/jest/errors/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/tests/tu-unit-test/jest/errors/</guid>
+      <description>Expect to throw error : synchronous :
+expect(() =&amp;gt; list.clickButton()).toThrow(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;); asynchronous :
+expect(list.clickButton()).rejects.toEqual(new Error(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;)); </description>
+    </item>
+    
+    <item>
+      <title>Mock Express Request &amp; Response</title>
+      <link>http://example.org/coding/tests/tu-unit-test/jest/mock-express-req-res/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/tests/tu-unit-test/jest/mock-express-req-res/</guid>
+      <description>Mock functions helper.js: const mockServerResponse = () =&amp;gt; { const response = {}; response.body = { message: &amp;#39;All good&amp;#39; } response.status = 200; return response; }; const mockExpressRes = () =&amp;gt; { const res = {}; res.send = jest.fn().mockReturnValue(res) res.status = jest.fn().mockReturnValue(res) res.json = jest.fn().mockReturnValue(res) res.sendStatus = jest.fn().mockReturnValue(res) return res }; module.exports = { mockServerResponse, mockExpressRes, }; Use in test : import network from &amp;#39;../../../../src/server/utils/network&amp;#39;; import helper from &amp;#39;../../../Helper/back/helper&amp;#39;; describe(&amp;#39;passePlat&amp;#39;, () =&amp;gt; { test(&amp;#39;passePlat : status 200 + body response&amp;#39;, () =&amp;gt; { const response = helper.</description>
+    </item>
+    
+  </channel>
+</rss>

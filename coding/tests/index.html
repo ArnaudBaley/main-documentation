@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Static Site Generators :: My New Hugo Site</title>
+    <title>Tests :: My New Hugo Site</title>
 
     
     <link href="../../css/nucleus.css?1631890799" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="../../web/static-site-generators/">
+  <body class="" data-url="../../coding/tests/">
     <nav id="sidebar" class="">
 
 
@@ -88,7 +88,7 @@
   
     
     <li data-nav-id="/coding/" title="Coding" class="dd-item
-        
+        parent
         
         
         ">
@@ -683,8 +683,8 @@
   
     
     <li data-nav-id="/coding/tests/" title="Tests" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="../../coding/tests/">
@@ -1117,7 +1117,7 @@
   
     
     <li data-nav-id="/web/" title="Web" class="dd-item
-        parent
+        
         
         
         ">
@@ -1245,8 +1245,8 @@
   
     
     <li data-nav-id="/web/static-site-generators/" title="Static Site Generators" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="../../web/static-site-generators/">
@@ -1546,7 +1546,7 @@
             
           
           
-            <a href='../../'>Home</a> > <a href='../../web/'>Web</a> > Static Site Generators
+            <a href='../../'>Home</a> > <a href='../../coding/'>Coding</a> > Tests
           
         
           
@@ -1563,7 +1563,8 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#usage-">Usage :</a></li>
+        <li><a href="#bdd---behavior-driven-development">BDD - Behavior Driven Development</a></li>
+        <li><a href="#tdd---test-driven-development">TDD - Test Driven Development</a></li>
       </ul>
     </li>
   </ul>
@@ -1583,7 +1584,7 @@
           
             <h1>
               
-              Static Site Generators
+              Tests
             </h1>
           
 
@@ -1591,66 +1592,43 @@
 
 
 
-	<table>
-<thead>
-<tr>
-<th>2021_05_17</th>
-<th></th>
-<th>Gatsby</th>
-<th>Hugo</th>
-<th>Jekyll</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Learning curve</td>
-<td></td>
-<td>higher</td>
-<td>lesser</td>
-<td></td>
-</tr>
-<tr>
-<td>Language</td>
-<td></td>
-<td>JavaScript</td>
-<td>Go</td>
-<td>Ruby</td>
-</tr>
-<tr>
-<td>Based on framework</td>
-<td></td>
-<td>React</td>
-<td>Go</td>
-<td>Liquid</td>
-</tr>
-<tr>
-<td>Features</td>
-<td></td>
-<td>More</td>
-<td>Less</td>
-<td></td>
-</tr>
-<tr>
-<td>Plugins</td>
-<td></td>
-<td>To install</td>
-<td>lot of already included</td>
-<td></td>
-</tr>
-<tr>
-<td>Build speed</td>
-<td></td>
-<td>100 ms</td>
-<td>15 sec</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="usage-">Usage :</h3>
+	<h3 id="bdd---behavior-driven-development">BDD - Behavior Driven Development</h3>
+<p><a href="https://en.wikipedia.org/wiki/Behavior-driven_development">SOURCE</a></p>
+<p>-<strong>Collaborate</strong> with business to assess the need<br>
+-<strong>specify behavior</strong> in terms of user stories :</p>
+<pre tabindex="0"><code>**As a** store owner,
+    **I want** to add items back to inventory when they are returned or exchanged,
+        **so that** I can track inventory.
+
+**Scenario 1**: Items returned for refund should be added to inventory.
+    **Given** that a customer previously bought a black sweater from me
+    **and** I have three black sweaters in inventory,
+    **when** they return the black sweater for a refund,
+    **then** I should have four black sweaters in inventory.
+
+**Scenario 2**: Exchanged items should be returned to inventory.
+    **Given** that a customer previously bought a blue garment from me
+    **and** I have two blue garments in inventory
+    **and** three black garments in inventory,
+    **when** they exchange the blue garment for a black garment,
+    **then** I should have three blue garments in inventory
+    **and** two black garments in inventory.
+</code></pre><h3 id="tdd---test-driven-development">TDD - Test Driven Development</h3>
+<p>Sources :</p>
 <ul>
-<li>Documentation website -&gt; Hugo</li>
+<li><a href="https://blog.ippon.fr/2020/02/12/apprendre-le-tdd/">Apprendre le TDD - blog.ippon.fr</a></li>
 </ul>
+<p>-Improve code quality, velocity</p>
+<p>-3 phases : RED -&gt; GREEN -&gt; Refactor - &gt;  &hellip;..<br>
+-short cycle (minutes)</p>
+<h4 id="red">RED</h4>
+<p>-Think about business need.<br>
+-Write test.<br>
+-Test must not passed.</p>
+<h4 id="red-1">RED</h4>
+<p>-Write most direct code to pass the test.</p>
+<h4 id="refactor">Refactor</h4>
+<p>-Improve code.</p>
 
 
 
@@ -1691,8 +1669,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1708,6 +1684,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2065,6 +2044,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2079,6 +2059,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2316,7 +2299,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2331,9 +2313,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2399,7 +2378,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2414,9 +2392,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2560,10 +2535,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../web/public-api/" title="public API"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../coding/nodejs/streams/" title="Buffer / Streams"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../web/static-site-generators/hugo/" title="Hugo" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../coding/tests/tdd/" title="TDD" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

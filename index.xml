@@ -198,10 +198,10 @@ docker service ps --no-trunc mysql </description>
     
     <item>
       <title>Errors</title>
-      <link>http://example.org/coding/tu-unit-test/jest/errors/</link>
+      <link>http://example.org/coding/tests/tu-unit-test/jest/errors/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
       
-      <guid>http://example.org/coding/tu-unit-test/jest/errors/</guid>
+      <guid>http://example.org/coding/tests/tu-unit-test/jest/errors/</guid>
       <description>Expect to throw error : synchronous :
 expect(() =&amp;gt; list.clickButton()).toThrow(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;); asynchronous :
 expect(list.clickButton()).rejects.toEqual(new Error(&amp;#39;incorrect param &amp;#34;action&amp;#34;&amp;#39;)); </description>
@@ -248,10 +248,10 @@ name: CI on: push jobs: deploy: runs-on: ubuntu-18.04 steps: - name: Git checkou
     
     <item>
       <title>Mock Express Request &amp; Response</title>
-      <link>http://example.org/coding/tu-unit-test/jest/mock-express-req-res/</link>
+      <link>http://example.org/coding/tests/tu-unit-test/jest/mock-express-req-res/</link>
       <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
       
-      <guid>http://example.org/coding/tu-unit-test/jest/mock-express-req-res/</guid>
+      <guid>http://example.org/coding/tests/tu-unit-test/jest/mock-express-req-res/</guid>
       <description>Mock functions helper.js: const mockServerResponse = () =&amp;gt; { const response = {}; response.body = { message: &amp;#39;All good&amp;#39; } response.status = 200; return response; }; const mockExpressRes = () =&amp;gt; { const res = {}; res.send = jest.fn().mockReturnValue(res) res.status = jest.fn().mockReturnValue(res) res.json = jest.fn().mockReturnValue(res) res.sendStatus = jest.fn().mockReturnValue(res) return res }; module.exports = { mockServerResponse, mockExpressRes, }; Use in test : import network from &amp;#39;../../../../src/server/utils/network&amp;#39;; import helper from &amp;#39;../../../Helper/back/helper&amp;#39;; describe(&amp;#39;passePlat&amp;#39;, () =&amp;gt; { test(&amp;#39;passePlat : status 200 + body response&amp;#39;, () =&amp;gt; { const response = helper.</description>
     </item>
     
@@ -318,6 +318,15 @@ Requirement   Open UDP port 1194
       
       <guid>http://example.org/coding/languages/javascript/string/</guid>
       <description>Extract part of an array or a string (new array) -&amp;gt; slice() const array = &amp;#39;hello world&amp;#39;; const result = array.slice(0,5); console.log(result); // hello Split string by separator -&amp;gt; split() const string = &amp;#39;hello,world&amp;#39;; const result = string.split(&amp;#34;,&amp;#34;); console.log(result); // [&amp;#34;hello&amp;#34;, &amp;#34;world&amp;#34;] </description>
+    </item>
+    
+    <item>
+      <title>TDD</title>
+      <link>http://example.org/coding/tests/tdd/</link>
+      <pubDate>Tue, 18 May 2021 15:55:39 +0200</pubDate>
+      
+      <guid>http://example.org/coding/tests/tdd/</guid>
+      <description></description>
     </item>
     
   </channel>
